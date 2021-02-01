@@ -1,0 +1,37 @@
+.banner-container {
+	border: 3px solid #dedede;
+	width:400px;
+	height: 400px;
+	margin: 0px auto;
+}
+
+.text-1 {
+	position: absolute;
+    margin-left: 20px;
+	text-shadow: 1px 1px #e6e6e6;
+	display: none;
+}
+
+.text-2 {
+	position: absolute;
+    background-color: rgba(0,0,0,0.55);
+    width: inherit;
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+    margin-top: -61px;
+    font-size: 16px;
+	display: none;
+}
+
+.text-2 a {
+	text-decoration:none;
+	color: red;
+}
+
+.link-to-website {
+	margin-top: 200px;
+	margin-left: 200px;
+    position: absolute;
+	display: none;
+}
