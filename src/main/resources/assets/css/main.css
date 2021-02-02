@@ -4,26 +4,13 @@
   margin: 0px;
   padding: 0px;
 }
-.main-body {
-  background-image: url(../images/Drugiset/image_6483441.JPG);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+/* Navigation css*/
 .navigation-container {
   height: 150px;
 }
 .navigation-container:hover {
   background-color: var(--background-color-onhover);
   transition: 0.5s;
-}
-.navigation-container:hover ul li a {
-  color: var(----nav-text-color);
-  transition: 0.5s;
-}
-.navigation-container:hover ul li .img-logo {
-  background-color: var(--background-color-onhover);
-  transition: 0.39s;
 }
 .navigation-container ul {
   display: flex;
@@ -44,6 +31,14 @@
   letter-spacing: 2px;
   font-weight: 300;
   text-transform: uppercase;
+}
+.navigation-container:hover ul li a {
+  color: var(--nav-text-color);
+  transition: 0.5s;
+}
+.navigation-container:hover ul li .img-logo {
+  background-color: var(--background-color-onhover);
+  transition: 0.39s;
 }
 .img-logo {
   width: 150px;
