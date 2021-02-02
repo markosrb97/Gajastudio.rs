@@ -2,18 +2,19 @@
   margin: 0px;
   padding: 0px;
 }
+.navigation-container ul li a {
+  color: #204149;
+}
 .body-style {
   background-color: #f1eee7;
   display: flex;
   align-content: center;
   justify-content: center;
 }
-
 .container {
   width: 1000px;
   height: auto;
 }
-
 .shop-naslov {
   display: flex;
   flex-direction: row;
@@ -23,7 +24,6 @@
   color: #a8a19b;
   letter-spacing: 4px;
 }
-
 .shop-naslov:before,
 .shop-naslov:after {
   content: "";
