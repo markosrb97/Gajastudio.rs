@@ -1,9 +1,10 @@
+@import url("colors.css");
 * {
   margin: 0px;
   padding: 0px;
 }
 .navigation-container ul li a {
-  color: #204149;
+  color: var(--nav-text-color);
 }
 .body-style {
   background-color: #f1eee7;
