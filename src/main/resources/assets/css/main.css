@@ -45,7 +45,7 @@ body {
   font-weight: 300;
   text-transform: uppercase;
 }
-img {
+.img-logo {
   width: 150px;
   border-radius: 50%;
 }
