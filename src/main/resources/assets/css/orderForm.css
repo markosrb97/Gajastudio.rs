@@ -1,24 +1,127 @@
 * {
-    margin: 0px;
-    padding: 0px;
-  }
-header {
-   height: 470px;
+  margin: 0px;
+  padding: 0px;
 }
-
-header img{
-      width: 100%;
-    
+header {
+  width: auto;
+  height: 250px;
+  background: url(../images/Ostalo/night-1374501\ copy.jpg);
+  background-size: cover;
 }
 
 .body-style {
-    background-color: #f1eee7;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
+  padding-top: 100px;
+  background-color: #f1eee7;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
 
 .container {
-    width: 1400px;
-    height: auto;
-  }
+  width: 1400px;
+  height: auto;
+  display: flex;
+}
+
+.left {
+  flex-basis: 50%;
+}
+
+.right {
+  flex-basis: 50%;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.porudzbina-title {
+  font-weight: normal;
+  font-family: 'Lora', serif;
+  margin-bottom: 40px;
+}
+
+.forma {
+  width: 80%;
+}
+
+.forma input {
+  margin-bottom: 20px;
+  padding-left: 8px;
+  border: 1px solid #a8a19b;
+  border-radius: 5px;
+  height: 50px;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.forma input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #87807c;
+  transition: 0.2s;
+}
+
+.ime,
+.prezime {
+  width: 47%;
+}
+
+.ulica,
+.broj-tel {
+  width: 100%;
+}
+
+.grad {
+  width: 70%;
+}
+
+.zip-broj {
+  width: 24%;
+}
+
+.razmak {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.naruci {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.naruci a {
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  color: #a8a19b;
+}
+
+.naruci a:hover {
+  color: #87807c;
+}
+
+.naruci input {
+  height: 55px;
+  width: 100px;
+  padding-left: 0;
+  font-weight: 600;
+  color: #f1eee7;
+  background-color: #87807c;
+  cursor: pointer;
+}
+
+.naruci input:focus {
+  box-shadow: none;
+}
+.naruci input:hover {
+  background-color: darken(black, 1.5%);
+  border: 1px solid rgba(#000, 0.05);
+  box-shadow: 1px 1px 2px rgba(#fff, 0.2);
+  color: lighten(black, 18%);
+  text-decoration: none;
+  text-shadow: -1px -1px 0 darken(black, 9.5%);
+  transition: all 250ms linear;
+}
