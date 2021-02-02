@@ -1,5 +1,5 @@
 @import url("colors.css");
-
+/* Body */
 * {
   margin: 0px;
   padding: 0px;
@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .navigation-container {
   height: 150px;
 }
@@ -17,10 +18,10 @@
   transition: 0.5s;
 }
 .navigation-container:hover ul li a {
-  color: var(--text-silver-color);
+  color: var(----nav-text-color);
   transition: 0.5s;
 }
-.navigation-container:hover ul li a img {
+.navigation-container:hover ul li .img-logo {
   background-color: var(--background-color-onhover);
   transition: 0.39s;
 }
