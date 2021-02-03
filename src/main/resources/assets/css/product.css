@@ -1,0 +1,91 @@
+@import url("colors.css");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.navigation-container ul li a {
+  color: var(--nav-text-color);
+}
+.body-style {
+  background-color: #f1eee7;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.container {
+  width: 1000px;
+  height: auto;
+}
+.shop-naslov {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #a8a19b;
+  letter-spacing: 4px;
+  margin-top: 100px;
+}
+.shop-naslov:before,
+.shop-naslov:after {
+  content: "";
+  border-bottom: 1px solid #a8a19b;
+  margin: auto;
+  width: 30px;
+}
+
+.shop-naslov:before {
+  margin-right: 10px;
+}
+
+.shop-naslov:after {
+  margin-left: 10px;
+}
+
+.naslov-proizvoda {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+.naslov-proizvoda p {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #87807c;
+    font-style: italic;
+
+}
+.proizvod {
+    width: 100%;
+    display: flex;
+    
+}
+
+.left {
+    flex-basis: 50%;
+    border: 1px solid black;
+    border: 7px solid white;
+}
+.slika {
+    height: 100%;
+    width: 100%;
+}
+.slika img {
+    height: 100%;
+    width: 100%;
+   
+}
+.right {
+    flex-basis: 50%;
+    border: 1px solid red;
+   
+}
+
+.opis-naslov {
+    font-family: "Raleway", sans-serif;
+    padding-left: 30px;
+}
+
+.opis {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
