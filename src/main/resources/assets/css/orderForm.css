@@ -27,13 +27,15 @@ header {
 
 .left {
   flex-basis: 50%;
+  border-right: 1px solid black;
 
 }
 
 .right {
   flex-basis: 50%;
-  height: 300px;
-  border-left: 1px solid black;
+  padding-left: 90px;
+  
+  
 }
 
 .porudzbina-title {
@@ -144,4 +146,27 @@ header {
   outline: none;
   box-shadow: 0 0 10px #87807c;
   transition: 0.2s;
+}
+
+.prikaz-proizvoda {
+  width: 100%;
+}
+.slika-proizvoda {
+  height: 70px;
+  width: 70px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+  
+}
+
+.broj-komada {
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+
 }
