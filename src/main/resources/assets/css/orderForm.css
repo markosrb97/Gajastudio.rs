@@ -150,23 +150,55 @@ header {
 
 .prikaz-proizvoda {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid  #a8a19b;
+  padding-bottom: 20px;
 }
 .slika-proizvoda {
   height: 70px;
   width: 70px;
-  border: 1px solid black;
+  border: 0px solid #a8a19b;
   border-radius: 10px;
   position: relative;
+  text-align: center;
+  flex-basis: 10%;
   
 }
 
-.broj-komada {
+.badge {
   height: 25px;
   width: 25px;
-  border: 1px solid black;
+  border: 1px transparent black;
+  background-color: grey;
   border-radius: 50%;
   position: absolute;
   top: -12px;
   right: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.badge p {
+  font-family: 'Lora', serif;
+  color:#f1eee7;
+}
+.thumbnail-proizvod{
+  height: 70px;
+  width: 70px;
+  border-radius: 10px ;
+}
+
+.ime-i-cena {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.ime-i-cena p {
+  font-family: 'Lora', serif;
+  font-weight: 700;
 }
