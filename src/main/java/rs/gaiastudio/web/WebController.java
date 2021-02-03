@@ -1,5 +1,6 @@
 package rs.gaiastudio.web;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,12 +9,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import rs.gaiastudio.model.Customer;
 import rs.gaiastudio.model.Order;
-import rs.gaiastudio.repo.CandleRepository;
+
 
 @Controller
 public class WebController {
 	
-	CandleRepository candleRepository;
 	
 	@GetMapping("/order")
 	public String getForm(Model model) {
@@ -33,4 +33,12 @@ public class WebController {
 		
 		return "shop";
 	}
+	
+	/*  TODO
+	@GetMapping("/shop/product/{id}")
+	public String getProduct(Model model) {
+		
+	}
+	*/
+	
 }
