@@ -18,24 +18,22 @@ header {
 }
 
 .container {
-  width: 1400px;
+  width: 1000px;
   height: auto;
   display: flex;
-  margin:0 50px 0 50px ;
-  padding: 0 50px 0 50px;
+  
+  
 }
 
 .left {
-  flex-basis: 50%;
+  flex-basis: 60%;
   border-right: 1px solid black;
 
 }
 
 .right {
-  flex-basis: 50%;
-  padding-left: 90px;
-  
-  
+  flex-basis: 40%;
+  padding-left: 40px;
 }
 
 .porudzbina-title {
@@ -45,7 +43,7 @@ header {
 }
 
 .forma {
-  width: 80%;
+  width: 90%;
   border-bottom: 1px solid #a8a19b;
   padding-bottom: 20px;
 }
@@ -55,7 +53,7 @@ header {
   padding-left: 8px;
   border: 1px solid #a8a19b;
   border-radius: 5px;
-  height: 50px;
+  height: 45px;
   font-family: 'Lora', serif;
   font-size: 15px;
   box-sizing: border-box;
@@ -111,7 +109,7 @@ header {
 }
 
 .naruci input {
-  height: 55px;
+  height: 45px;
   width: 100px;
   padding-left: 0;
   font-weight: 600;
@@ -162,6 +160,7 @@ header {
   border-radius: 10px;
   position: relative;
   text-align: center;
+  display: flex;
   flex-basis: 10%;
   
 }
@@ -191,11 +190,12 @@ header {
 }
 
 .ime-i-cena {
-  width: 85%;
   display: flex;
   justify-content: space-between;
-  margin-left: 20px;
   align-items: center;
+  flex-basis: 75%;
+  padding-left: 10px;
+  
 }
 
 .ime-i-cena p {
