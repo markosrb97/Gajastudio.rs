@@ -193,12 +193,44 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-basis: 75%;
+  flex-basis: 79%;
   padding-left: 10px;
   
 }
 
 .ime-i-cena p {
   font-family: 'Lora', serif;
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.racun {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 30px 0;
+  border-bottom: 1px solid #a8a19b;
+}
+
+.racun p {
+  font-family: 'Lora', serif;
+}
+
+.ukupna-cena {
+  font-size: 22px;
+  font-weight: 600;
+}
+.dostava-napomena{
+  padding-top: 20px;
+}
+.dostava-napomena p {
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  padding:10px 10px 10px 10px;
+  background-color:#a8a19b ;
+  border-radius: 5px;
+  color: #f1eee7;
+}
+.dostava-napomena p::first-line {
+  text-indent: -6px;
 }
