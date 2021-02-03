@@ -4,8 +4,9 @@
 }
 header {
   width: auto;
-  height: 250px;
-  background: url(../images/Ostalo/night-1374501\ copy.jpg);
+  height: 150px;
+  background: url(../images/Ostalo/header_slika2.jpeg);
+  background-position: center;
   background-size: cover;
 }
 
