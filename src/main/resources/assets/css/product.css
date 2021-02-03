@@ -1,11 +1,9 @@
-@import url("colors.css");
+@import url('colors.css');
 * {
   margin: 0px;
   padding: 0px;
 }
-.navigation-container ul li a {
-  color: var(--nav-text-color);
-}
+
 .body-style {
   background-color: #f1eee7;
   display: flex;
@@ -20,7 +18,7 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 80px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   color: #a8a19b;
   letter-spacing: 4px;
@@ -28,7 +26,7 @@
 }
 .shop-naslov:before,
 .shop-naslov:after {
-  content: "";
+  content: '';
   border-bottom: 1px solid #a8a19b;
   margin: auto;
   width: 30px;
@@ -43,49 +41,47 @@
 }
 
 .naslov-proizvoda {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .naslov-proizvoda p {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    color: #87807c;
-    font-style: italic;
-
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #87807c;
+  font-style: italic;
 }
 .proizvod {
-    width: 100%;
-    display: flex;
-    
+  width: 100%;
+  display: flex;
 }
 
 .left {
-    flex-basis: 50%;
-    border: 1px solid black;
-    border: 7px solid white;
+  flex-basis: 50%;
 }
 .slika {
-    height: 100%;
-    width: 100%;
+  width: 100%;
 }
 .slika img {
-    height: 100%;
-    width: 100%;
-   
+  height: 100%;
+  width: 90%;
+  border: 7px solid white;
 }
 .right {
-    flex-basis: 50%;
-    border: 1px solid red;
-   
+  flex-basis: 50%;
+  border: 1px solid red;
 }
 
+.right p {
+  padding: 30px;
+}
 .opis-naslov {
-    font-family: "Raleway", sans-serif;
-    padding-left: 30px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .opis {
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+  color: #675c53;
+  letter-spacing: 1px;
+  font-size: 16px;
 }
