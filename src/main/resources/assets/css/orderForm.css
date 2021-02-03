@@ -30,7 +30,7 @@ header {
 .right {
   flex-basis: 50%;
   height: 300px;
-  border: 1px solid black;
+  border-left: 1px solid black;
 }
 
 .porudzbina-title {
@@ -41,6 +41,8 @@ header {
 
 .forma {
   width: 80%;
+  border-bottom: 1px solid #a8a19b;
+  padding-bottom: 20px;
 }
 
 .forma input {
@@ -109,7 +111,7 @@ header {
   padding-left: 0;
   font-weight: 600;
   color: #f1eee7;
-  background-color: #87807c;
+  background-color: #a8a19b;
   cursor: pointer;
 }
 
@@ -117,11 +119,26 @@ header {
   box-shadow: none;
 }
 .naruci input:hover {
-  background-color: darken(black, 1.5%);
-  border: 1px solid rgba(#000, 0.05);
-  box-shadow: 1px 1px 2px rgba(#fff, 0.2);
-  color: lighten(black, 18%);
-  text-decoration: none;
-  text-shadow: -1px -1px 0 darken(black, 9.5%);
-  transition: all 250ms linear;
+  background-color: #87807c;
+  transition: 0.4s;
+}
+
+.forma textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 8px 8px 0 8px;
+  border: 1px solid #a8a19b;
+  border-radius: 5px;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  word-wrap: normal;
+}
+
+.forma textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #87807c;
+  transition: 0.2s;
 }
