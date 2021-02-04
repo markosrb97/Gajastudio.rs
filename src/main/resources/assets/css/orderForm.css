@@ -1,0 +1,251 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  width: auto;
+  height: 150px;
+  background: url(../images/Ostalo/header_slika2.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-header{
+  width: 1000px;
+}
+.logo-header img{
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  background-color:#f1eee7 ;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.body-style {
+  padding-top: 50px;
+  background-color: #f1eee7;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  
+  
+}
+
+.left {
+  flex-basis: 60%;
+  border-right: 1px solid #a8a19b;
+
+}
+
+.right {
+  flex-basis: 40%;
+  padding-left: 40px;
+}
+
+.porudzbina-title {
+  font-weight: normal;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+}
+
+.forma {
+  width: 90%;
+  border-bottom: 1px solid #a8a19b;
+  padding-bottom: 20px;
+}
+
+.forma input {
+  margin-bottom: 20px;
+  padding-left: 8px;
+  border: 1px solid #a8a19b;
+  border-radius: 5px;
+  height: 45px;
+  font-family: 'Playfair Display', serif;  
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.forma input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #87807c;
+  transition: 0.2s;
+}
+
+.ime,
+.prezime {
+  width: 47%;
+}
+
+.ulica,
+.broj-tel {
+  width: 100%;
+}
+
+.grad {
+  width: 70%;
+}
+
+.zip-broj {
+  width: 24%;
+}
+
+.razmak {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.naruci {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.naruci a {
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;  
+  font-size: 15px;
+  color: #a8a19b;
+}
+
+.naruci a:hover {
+  color: #87807c;
+}
+
+.naruci input {
+  height: 45px;
+  width: 100px;
+  padding-left: 0;
+  font-weight: 600;
+  color: #f1eee7;
+  background-color: #a8a19b;
+  cursor: pointer;
+}
+
+.naruci input:focus {
+  box-shadow: none;
+}
+.naruci input:hover {
+  background-color: #87807c;
+  transition: 0.4s;
+}
+
+.forma textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 8px 8px 0 8px;
+  border: 1px solid #a8a19b;
+  border-radius: 5px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  word-wrap: normal;
+}
+
+.forma textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #87807c;
+  transition: 0.2s;
+}
+
+.prikaz-proizvoda {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid  #a8a19b;
+  padding-bottom: 20px;
+}
+.slika-proizvoda {
+  height: 70px;
+  width: 70px;
+  border: 0px solid #a8a19b;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-basis: 10%;
+  
+}
+
+.badge {
+  height: 25px;
+  width: 25px;
+  border: 1px transparent black;
+  background-color: grey;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge p {
+  font-family: 'Playfair Display', serif;
+  color:#f1eee7;
+}
+.thumbnail-proizvod{
+  height: 70px;
+  width: 70px;
+  border-radius: 10px ;
+}
+
+.ime-i-cena {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 79%;
+  padding-left: 10px;
+  
+}
+
+.ime-i-cena p {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.racun {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 30px 0;
+  border-bottom: 1px solid #a8a19b;
+}
+
+.racun p {
+  font-family: 'Lora', serif;
+}
+
+.ukupna-cena {
+  font-size: 22px;
+  font-weight: 600;
+}
+.dostava-napomena{
+  padding-top: 20px;
+}
+.dostava-napomena p {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  padding:10px 10px 10px 10px;
+  background-color:#a8a19b ;
+  border-radius: 5px;
+  color: #f1eee7;
+}
+.dostava-napomena p::first-line {
+  text-indent: -6px;
+}
