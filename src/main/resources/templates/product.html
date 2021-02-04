@@ -12,8 +12,8 @@
 	<meta name="robots" content="NO INDEX, NO FOLLOW" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/product.css"/>
-	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="../assets/css/colors.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
@@ -25,11 +25,21 @@
 
 <body>
 <header>
-	
+	<nav>
+        <div class="navigation-container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li id="logo"><img src="../assets/images/moj logo.png" class="img-logo"/></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
 	<main class="body-style">
 		<div class="container">
-        <p class="shop-naslov">SHOP</p>
+            <p class="shop-naslov">SHOP</p>
             <div class="naslov-proizvoda">
                 <p>Ljubav i strast</p>
             </div>
@@ -41,21 +51,35 @@
                 </div>
                 <div class="right">
                     <div class="opis-i-cena">
-                        <p class="opis-naslov">Opis:</p>
-                        <p class="opis">Predstavljamo vam sveću „Strast i ljubav“. Da li vam fali, ili samo
-                            želite više ljubavi i strasti u vašem životu? Ako je odgovor da, onda će vam ova
-                            sveća pomoći u tome.<br>
-
-                            Uz naš preporučeni ritual koji dobijate uz sveću oplemenićete vaš život iskrenim
+                        <div class="opis"> <p>Da li vam fali, ili samo želite više ljubavi i strasti u vašem životu? Ako je odgovor da, onda će vam ova
+                            sveća pomoći u tome.</p>
+                            
+                            <p>Uz naš preporučeni ritual koji dobijate uz sveću oplemenićete vaš život iskrenim
                             osećanjima zahvalnosti i ljubavi, ali i strasti prema životu. Privucite sebi ljubav
-                            koju već zaslužujete, i koja čeka da se desi. Probudite strast u vašem životu.
-                            Napravljena je od prehrambenog parafinskog voska, sa mirisnim notama nežnog
+                            koju već zaslužujete, i koja čeka da se desi. Probudite strast u vašem životu.</p>
+                            
+                            <p>Napravljena je od prehrambenog parafinskog voska, sa mirisnim notama nežnog
                             poljskog cveća. Ukrašena je laticama ruže koje dodaju ljubavnu i magijsku energiju
-                            ovoj sveći.<br>
-
-                            Zapamtite, vi vašom energijom i namerom stvarate magiju i manifestujete, a naša
-                            sveća vam to omogućava i pomaže u tome.</p>
+                            ovoj sveći.</p>
+                        </div>
+                        <hr>  
+                        <div class="cena">
+                            <p class="cena-naslov">Cena:</p>
+                            <p class="cena-broj"><span>1000  </span>RSD</p>
+                        </div>
+                        <hr>
+                        <div class="kolicina-i-dugme">
+                            <div class="kolicina">
+                                <p class="cena-naslov" >Količina</p> <input type="number" value="1" max="10">
+                            </div>
+                            <div class="dugme">
+                                <button type="button">Dodaj u korpu</button>
+                            </div>
+                        </div>
+                        <hr>
                     </div>
                 </div>
             </div>
         </div>
+
+    </main>
