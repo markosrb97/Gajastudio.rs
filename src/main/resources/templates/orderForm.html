@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org">
+<html>
 
 <head>
 	<meta charset="utf-8" />
@@ -12,7 +12,7 @@
 	<meta name="robots" content="NO INDEX, NO FOLLOW" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../assets/css/orderForm.css"/>
+	<link rel="stylesheet" th:href="@{/assets/css/orderForm.css}"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -22,7 +22,9 @@
 
 <body>
     <header>
-        
+        <div class="logo-header">
+			<img src="../assets/images/moj logo.png" alt="logo">
+		</div>
     </header>
 
 	
@@ -30,16 +32,16 @@
         <div class="container">
 			<div class="left">
 				<div class="forma">
-					<form action="#" th:action="@{/order}" th:object="${customer}" method="POST">
+					<form>
 						<h2 class="porudzbina-title">Detalji za porudžbinu</h2>
 						<div class="razmak">
-							<input class="ime" type="text" placeholder="Ime" th:field="*{firstName}"> <input class="prezime" type="text" placeholder="Prezime" th:field="*{lastName}">
+							<input class="ime" type="text" placeholder="Ime"> <input class="prezime" type="text" placeholder="Prezime">
 						</div>
-						<input class="ulica" type="text" placeholder="Naziv i broj ulice" th:field="*{address}">
+						<input class="ulica" type="text" placeholder="Naziv i broj ulice">
 						<div class="razmak">
-							<input class="grad" type="text" placeholder="Grad" th:field="*{city}"> <input class="zip-broj" type="text" placeholder="Poštanski broj" th:field="*{zipCode}">
+							<input class="grad" type="text" placeholder="Grad"> <input class="zip-broj" type="text" placeholder="Poštanski broj">
 						</div>
-						<input class="broj-tel" type="text" placeholder="Broj telefona" th:field="*{telNumber}">
+						<input class="broj-tel" type="text" placeholder="Broj telefona">
 						<textarea maxlength="500" placeholder="Napomena (nije obavezno)"></textarea>
 						<div class="naruci">
 							<a href="#">&lt; Nazad u korpu</a> <input class="btn" type="submit" value="Naruči">
@@ -49,7 +51,23 @@
 				</div>
 			</div> 
 			<div class="right">
-				
+				<div class="prikaz-proizvoda">
+					<div class="slika-proizvoda">
+						<img class="thumbnail-proizvod" src="../assets/images/Sveca preview 2 small/Ljubav_i_strast.jpg">
+						<div class="badge">
+							<p>2</p>
+						</div>
+					</div>
+					<div class="ime-i-cena">
+						<p class="ime-proizvoda">Ljubav i strast</p> <p class="cena-proizvoda">1000 RSD</p>
+					</div>
+				</div>
+				<div class="racun">
+					<p class="ukupno">Ukupno</p> <p class="ukupna-cena">1000 RSD</p>
+				</div>
+				<div class="dostava-napomena">
+					<p><sup>*</sup>U cenu nije uključena poštarina jer cena varira u zavisnosti od kurirske službe.</p>
+				</div>
 			</div>
 		
     	</div>

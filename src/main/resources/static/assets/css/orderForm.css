@@ -4,9 +4,24 @@
 }
 header {
   width: auto;
-  height: 250px;
-  background: url(../images/Ostalo/night-1374501\ copy.jpg);
+  height: 150px;
+  background: url(../images/Ostalo/header_slika2.jpeg);
+  background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-header {
+  width: 1000px;
+}
+
+.logo-header img {
+  height: 110px;
+  width: 110px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .body-style {
@@ -18,22 +33,22 @@ header {
 }
 
 .container {
-  width: 1400px;
+  width: 1000px;
   height: auto;
   display: flex;
-  margin:0 50px 0 50px ;
-  padding: 0 50px 0 50px;
+  
+  
 }
 
 .left {
-  flex-basis: 50%;
+  flex-basis: 60%;
+  border-right: 1px solid black;
 
 }
 
 .right {
-  flex-basis: 50%;
-  height: 300px;
-  border-left: 1px solid black;
+  flex-basis: 40%;
+  padding-left: 40px;
 }
 
 .porudzbina-title {
@@ -43,7 +58,7 @@ header {
 }
 
 .forma {
-  width: 80%;
+  width: 90%;
   border-bottom: 1px solid #a8a19b;
   padding-bottom: 20px;
 }
@@ -53,7 +68,7 @@ header {
   padding-left: 8px;
   border: 1px solid #a8a19b;
   border-radius: 5px;
-  height: 50px;
+  height: 45px;
   font-family: 'Lora', serif;
   font-size: 15px;
   box-sizing: border-box;
@@ -109,7 +124,7 @@ header {
 }
 
 .naruci input {
-  height: 55px;
+  height: 45px;
   width: 100px;
   padding-left: 0;
   font-weight: 600;
@@ -144,4 +159,93 @@ header {
   outline: none;
   box-shadow: 0 0 10px #87807c;
   transition: 0.2s;
+}
+
+.prikaz-proizvoda {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid  #a8a19b;
+  padding-bottom: 20px;
+}
+.slika-proizvoda {
+  height: 70px;
+  width: 70px;
+  border: 0px solid #a8a19b;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-basis: 10%;
+  
+}
+
+.badge {
+  height: 25px;
+  width: 25px;
+  border: 1px transparent black;
+  background-color: grey;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge p {
+  font-family: 'Lora', serif;
+  color:#f1eee7;
+}
+.thumbnail-proizvod{
+  height: 70px;
+  width: 70px;
+  border-radius: 10px ;
+}
+
+.ime-i-cena {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 79%;
+  padding-left: 10px;
+  
+}
+
+.ime-i-cena p {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+}
+
+.racun {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 30px 0;
+  border-bottom: 1px solid #a8a19b;
+}
+
+.racun p {
+  font-family: 'Lora', serif;
+}
+
+.ukupna-cena {
+  font-size: 22px;
+  font-weight: 600;
+}
+.dostava-napomena{
+  padding-top: 20px;
+}
+.dostava-napomena p {
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  padding:10px 10px 10px 10px;
+  background-color:#a8a19b ;
+  border-radius: 5px;
+  color: #f1eee7;
+}
+.dostava-napomena p::first-line {
+  text-indent: -6px;
 }
