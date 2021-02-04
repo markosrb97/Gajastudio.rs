@@ -8,10 +8,24 @@ header {
   background: url(../images/Ostalo/header_slika2.jpeg);
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-header{
+  width: 1000px;
+}
+.logo-header img{
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  background-color:#f1eee7 ;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .body-style {
-  padding-top: 100px;
+  padding-top: 50px;
   background-color: #f1eee7;
   display: flex;
   align-content: center;
@@ -28,7 +42,7 @@ header {
 
 .left {
   flex-basis: 60%;
-  border-right: 1px solid black;
+  border-right: 1px solid #a8a19b;
 
 }
 
@@ -39,7 +53,7 @@ header {
 
 .porudzbina-title {
   font-weight: normal;
-  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;
   margin-bottom: 40px;
 }
 
@@ -55,7 +69,7 @@ header {
   border: 1px solid #a8a19b;
   border-radius: 5px;
   height: 45px;
-  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;  
   font-size: 15px;
   box-sizing: border-box;
 }
@@ -100,7 +114,7 @@ header {
 
 .naruci a {
   text-decoration: none;
-  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;  
   font-size: 15px;
   color: #a8a19b;
 }
@@ -135,7 +149,7 @@ header {
   padding: 8px 8px 0 8px;
   border: 1px solid #a8a19b;
   border-radius: 5px;
-  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 15px;
   box-sizing: border-box;
   word-wrap: normal;
@@ -181,7 +195,7 @@ header {
 }
 
 .badge p {
-  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;
   color:#f1eee7;
 }
 .thumbnail-proizvod{
@@ -200,7 +214,7 @@ header {
 }
 
 .ime-i-cena p {
-  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
 }
 
@@ -225,7 +239,7 @@ header {
   padding-top: 20px;
 }
 .dostava-napomena p {
-  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 13px;
   padding:10px 10px 10px 10px;
   background-color:#a8a19b ;
