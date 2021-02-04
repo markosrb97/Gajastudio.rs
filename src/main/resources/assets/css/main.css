@@ -4,6 +4,9 @@
   margin: 0px;
   padding: 0px;
 }
+.d-flex {
+  display: flex;
+}
 /* Navigation css*/
 .navigation-container {
   height: 150px;
@@ -13,7 +16,6 @@
   transition: 0.5s;
 }
 .navigation-container ul {
-  display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 45px;
