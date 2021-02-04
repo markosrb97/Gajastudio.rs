@@ -8,6 +8,20 @@ header {
   background: url(../images/Ostalo/header_slika2.jpeg);
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-header {
+  width: 1000px;
+}
+
+.logo-header img {
+  height: 110px;
+  width: 110px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .body-style {
