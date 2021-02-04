@@ -30,6 +30,13 @@ public class Candle {
 		return type;
 	}
 	
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
+	public void setType(String type) {
+		this.type = type;
+	}
 	
 	@Override
 	public String toString() {
