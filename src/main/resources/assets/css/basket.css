@@ -1,4 +1,4 @@
-@import url("colors.css");
+@import url('colors.css');
 * {
   margin: 0px;
   padding: 0px;
@@ -9,18 +9,17 @@
 .body-style {
   background-color: #f1eee7;
   display: flex;
-  align-content: center;
   justify-content: center;
 }
 .container {
   width: 1000px;
   height: auto;
-  }
+}
 .shop-naslov {
   display: flex;
   flex-direction: row;
   margin-bottom: 80px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   color: #a8a19b;
   letter-spacing: 4px;
@@ -28,7 +27,7 @@
 }
 .shop-naslov:before,
 .shop-naslov:after {
-  content: "";
+  content: '';
   border-bottom: 1px solid #a8a19b;
   margin: auto;
   width: 30px;
@@ -43,27 +42,27 @@
 }
 
 .basket-container {
-    width: 100%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
 }
 
 .basket {
-    height: 100%;
-    width: 100%;
-    border: 1px solid #a8a19b;
-    display: flex;
-    justify-content: center;
-    padding: 60px;
-   
-    
+  height: 100%;
+  width: 100%;
+  border: 1px solid #a8a19b;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
 }
 
-.slika-proizvoda img{
+form {
+  width: 100%;
+}
+
+.slika-proizvoda img {
   height: 150px;
   width: 150px;
 }
@@ -73,7 +72,7 @@ table {
   border-collapse: collapse;
   margin-top: 50px;
   font-family: 'Playfair Display', serif;
-  color:#87807c;
+  color: #87807c;
   display: table;
 }
 
@@ -86,7 +85,7 @@ tbody {
   border-bottom: 1px solid #e2ddd8;
 }
 
- table thead tr {
+table thead tr {
   font-weight: 300;
   text-transform: uppercase;
   text-align: left;
@@ -108,6 +107,7 @@ td {
   width: 40px;
   border: 1px solid #e2ddd8;
   text-align: center;
+  color: #87807c;
 }
 
 .kolicina-proizvoda input:focus {
@@ -115,10 +115,11 @@ td {
 }
 .opis-proizvoda a {
   text-decoration: none;
-  color:#87807c ;
+  color: #87807c;
 }
 
-.cena-prozivoda, .ukupna-cena {
+.cena-prozivoda,
+.ukupna-cena {
   font-size: 20px;
 }
 
@@ -128,12 +129,51 @@ td {
 }
 
 .check-out {
-position: relative;
-
+  display: block;
+  text-align: right;
+  margin-top: 20px;
 }
 
- 
+.check-out input {
+  display: block;
+  float: right;
+  height: 45px;
+  width: 100px;
+  font-size: large;
+  color: #f1eee7;
+  background-color: #a8a19b;
+  cursor: pointer;
+  font-family: 'Playfair Display', serif;
+  border: none;
+}
+.check-out input:focus {
+  outline: none;
+}
 
+.check-out input:hover {
+  background-color: #87807c;
+  transition: 0.4s;
+}
 
+.ukupno {
+  margin-bottom: 20px;
+}
+.ukupno span,
+p {
+  display: inline;
+  font-family: 'Playfair Display', serif;
+  color: #87807c;
+}
+.ukupno span {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
 
-
+.ukupno p {
+  margin-left: 50px;
+  font-size: 25px;
+}
