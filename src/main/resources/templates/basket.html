@@ -18,6 +18,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -36,10 +37,49 @@
 </header>
 	<main class="body-style">
 		<div class="container">
-        <p class="shop-naslov">SHOP</p>
+        <p class="shop-naslov">KORPA</p>
         <div class="basket-container">
             <div class="basket">
-                
+				<form>
+				<table>
+					<thead>
+						<tr>
+							<th>Artikal</th>
+							<th>&nbsp;</th>
+							<th>Cena</th>
+							<th>Kolicina</th>
+							<th>Ukupno</th>
+							<th>&nbsp;</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="slika-proizvoda">
+								<a href="#"> <img src="../assets/images/Sveca preview 2 small/Ljubav_i_strast.jpg"></a>
+							</td>
+							<td class="opis-proizvoda">
+								<a href="#">Ljubav i strast</a>
+							</td>
+							<td class="cena-prozivoda">
+								<span>1000</span> RSD
+							</td>
+							<td class="kolicina-proizvoda">
+								<input type="text" value="1">
+							</td>
+							<td class="ukupna-cena">
+								<span>1000</span> RSD
+							</td>
+							<td class="ukloni-proizvod">
+								<a href="#"><img src="../assets/images/iconmonstr-x-mark-thin.svg"></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="check-out">
+					<p class="ukupno">Ukupno:</p> <p>1000 RSD</p>
+					<input type="submit">Dalje
+				</div>
+			</form>
             </div>
         </div>
         </div>

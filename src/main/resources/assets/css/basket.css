@@ -44,16 +44,96 @@
 
 .basket-container {
     width: 100%;
-    height: 600px;
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    
+
 }
 
 .basket {
     height: 100%;
     width: 100%;
     border: 1px solid #a8a19b;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+   
+    
 }
+
+.slika-proizvoda img{
+  height: 150px;
+  width: 150px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  font-family: 'Playfair Display', serif;
+  color:#87807c;
+  display: table;
+}
+
+thead {
+  border-bottom: 1px solid #e2ddd8;
+  border-top: 1px solid #e2ddd8;
+}
+
+tbody {
+  border-bottom: 1px solid #e2ddd8;
+}
+
+ table thead tr {
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 12px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+}
+
+td {
+  padding: 29px 0;
+}
+
+.slika-proizvoda {
+  width: 190px;
+}
+.kolicina-proizvoda input {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #e2ddd8;
+  text-align: center;
+}
+
+.kolicina-proizvoda input:focus {
+  outline: none;
+}
+.opis-proizvoda a {
+  text-decoration: none;
+  color:#87807c ;
+}
+
+.cena-prozivoda, .ukupna-cena {
+  font-size: 20px;
+}
+
+.ukloni-proizvod img {
+  height: 13px;
+  width: 13px;
+}
+
+.check-out {
+position: relative;
+
+}
+
+ 
+
+
+
+
