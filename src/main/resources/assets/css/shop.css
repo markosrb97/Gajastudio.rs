@@ -17,6 +17,10 @@
 .navigation-container ul li a {
   color: var(--nav-text-color);
 }
+#logo {
+  background-color: white;
+  border-radius: 50%;
+}
 /* Shop title*/
 .shop-naslov {
   flex-direction: row;

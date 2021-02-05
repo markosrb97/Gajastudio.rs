@@ -1,4 +1,4 @@
-@import url('colors.css');
+@import url("colors.css");
 * {
   margin: 0px;
   padding: 0px;
@@ -6,8 +6,12 @@
 .navigation-container ul li a {
   color: var(--nav-text-color);
 }
-.img-logo{
-  background:white;
+#logo {
+  background-color: white;
+  border-radius: 50%;
+}
+.img-logo {
+  background: white;
 }
 .body-style {
   background-color: #f1eee7;
@@ -23,7 +27,7 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 80px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: #a8a19b;
   letter-spacing: 4px;
@@ -31,7 +35,7 @@
 }
 .shop-naslov:before,
 .shop-naslov:after {
-  content: '';
+  content: "";
   border-bottom: 1px solid #a8a19b;
   margin: auto;
   width: 30px;
@@ -51,7 +55,7 @@
   justify-content: center;
 }
 .naslov-proizvoda p {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 32px;
   color: #87807c;
   font-style: italic;
@@ -78,16 +82,15 @@
 }
 
 .opis {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #675c53;
   letter-spacing: 1px;
   font-size: 16px;
   text-align: justify;
-  }
+}
 
 .opis p {
   padding: 0 20px 20px 0;
-  
 }
 
 .opis-i-cena {
@@ -100,13 +103,13 @@
 }
 
 .cena-naslov {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #a8a19b;
   font-size: 20px;
 }
 
 .cena-broj {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #87807c;
   font-size: 14px;
   display: block;
@@ -123,7 +126,7 @@
   display: flex;
   justify-content: space-between;
   margin: 20px 0 20px 0;
-  }
+}
 
 .kolicina {
   display: flex;
@@ -136,25 +139,25 @@
   height: 40px;
   border: 0 none;
   margin-left: 25px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #a8a19b;
   font-size: 30px;
   text-align: center;
 }
 
-.kolicina input:focus{
+.kolicina input:focus {
   outline: none;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
-    -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-input[type=number] {
-    -moz-appearance:textfield; /* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
 }
 
 .dugme button {
@@ -162,12 +165,12 @@ input[type=number] {
   width: 130px;
   color: #f1eee7;
   background-color: #a8a19b;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   border: none;
   font-size: 17px;
 }
 
-.dugme button:hover{
+.dugme button:hover {
   background-color: #87807c;
   transition: 0.4s;
 }
