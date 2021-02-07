@@ -15,11 +15,23 @@ public class Candle {
 	private String type;
 	@Column(name = "price")
 	private int price;
-
+	@Column(name = "description", columnDefinition = "CLOB")
+	@Lob
+	private String description;
+	
+	public Candle(String type, int price, String description) {
+		this.type = type;
+		this.price = price;
+		this.description = description;
+	}
 	
 	public Candle(String type, int price) {
 		this.type = type;
 		this.price = price;
+	}
+	
+	public Candle() {
+		
 	}
 	
 	public int getPrice() {
@@ -38,8 +50,20 @@ public class Candle {
 		this.type = type;
 	}
 	
+	public String getDescription() {
+		return this.description;
+	}
+	
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	public long getId() {
+		return this.id;
+	}
+	
 	@Override
 	public String toString() {
-		return type + "\n" + price + "\n";
+		return type + "\n" + price + "\n" + this.description + "\n";
 	}
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org">
+  <html xmlns:th="https://www.thymeleaf.org"> 
   <head>
     <meta charset="utf-8" />
     <title>Gaia Studio | Candles | Mirišljave sveće | Prodaja sveća</title>
@@ -15,15 +15,16 @@
     <meta name="robots" content="NO INDEX, NO FOLLOW" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"/>
-		<link rel="stylesheet" th:href="@{/assets/css/main.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/main.css}" />
 		<link rel="stylesheet" th:href="@{/assets/css/colors.css}" />
+
   </head>
   <!--TODO:   za svako [src -> th:src] onda gleda direktno u static folder, mozda bude brze  -->
   <body class="main-body">
     <header>
       <div class="slideshow-container">
         <div class="mySlides fade">
-          <img src="../assets/images/Ostalo/slide-photo-1.jpeg" style="width: 100%"/>
+          <img th:src="@{/assets/images/Ostalo/slide-photo-1.jpeg}" style="width: 100%"/>
         </div>
         <div class="mySlides fade">
           <img src="../assets/images/Ostalo/slide-photo-2.jpeg" style="width: 100%"/>

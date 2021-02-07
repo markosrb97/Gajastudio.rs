@@ -31,72 +31,16 @@
 		<div class="container">
 			<p class="shop-naslov d-flex">SHOP</p>
 			<div class="proizvodi-container d-flex">
-				<div class="proizvod">
+
+				<div class="proizvod" th:each="candle : ${candles}">
 					<div class="slika-preview">
-						<img class="sveca-preview" src="/assets/images/Prviset/Ljubav_i_strast.JPG" alt="Ljubav i strast">
-						<img class="sveca-hover" src="../assets/images/Sveca preview 2 small/Ljubav_i_strast.jpg">
+						<img class="sveca-preview" th:src="@{${'/assets/images/Prviset/'+candle.type+'.JPG'}}">
+						<img class="sveca-hover" th:src="@{${'/assets/images/Sveca preview 2 small/'+candle.type+'.jpg'}}">
 					</div>
-					<a href="#" class="naslov-proizvoda">Ljubav i strast</a>
-					<p class="cena-proizvoda"><span class="cena">1000</span> RSD</p>
+					<a href="#" class="naslov-proizvoda" th:text="${candle.type}"> </a>
+					<p class="cena-proizvoda" th:text="${candle.price}"><span class="cena"> </span> RSD</p>
 				</div>
-				<div class="proizvod">
-					<div class="slika-preview">
-						<img class="sveca-preview" src="../assets/images/Prviset/Duboki_mir.JPG" alt="Duboki mir">
-						<img class="sveca-hover" src="../assets/images/Sveca preview 2 small/Duboki _mir.jpg">
-					</div>
-				<a href="#" class="naslov-proizvoda">Duboki mir</a>
-				<p class="cena-proizvoda"><span class="cena">1000</span> RSD</p>
-			</div>
-				<div class="proizvod">
-					<div class="slika-preview">
-						<img class="sveca-preview" src="../assets/images/Prviset/Ciscenje_negative _energije.JPG" alt="Ciscenje negative energije">
-						<img class="sveca-hover" src="../assets/images/Sveca preview 2 small/Ciscenje_negativne_energije.jpg">
-					</div>
-					<a href="#" class="naslov-proizvoda">Čišćenje negativne energije</a>
-					<p class="cena-proizvoda"><span class="cena">1000</span> RSD</p>
-				</div>
-				<div class="proizvod">
-					<div class="slika-preview">
-						<img class="sveca-preview" src="../assets/images/Prviset/Mlad_mesec.JPG" alt="Mlad mesec">
-						<img class="sveca-hover" src="../assets/images/Sveca preview 2 small/Mlad_mesec.jpg">
-					</div>
-					<a href="#" class="naslov-proizvoda">Mlad mesec</a>
-					<p class="cena-proizvoda"><span class="cena">1000</span> RSD</p>
-				</div>
-				<div class="proizvod">
-					<div class="slika-preview">
-						<img class="sveca-preview" src="../assets/images/Prviset/Pun_mesec.JPG" alt="Pun mesec">
-						<img class="sveca-hover" src="../assets/images/Sveca preview 2 small/Pun_mesec.jpg">
-					</div>
-					<a href="#" class="naslov-proizvoda">Pun mesec</a>
-					<p class="cena-proizvoda"><span class="cena">1000</span> RSD</p>
-				</div>
-				<div class="proizvod">
-					<div class="slika-preview">
-				  	  <img class="sveca-preview" src="../assets/images/Prviset/Prosperitet.JPG" alt="Prosperitet">
-				  	  <img class="sveca-hover" src="../assets/images/Sveca preview 2 small/Prosperitet.jpg">
-					</div>
-					<a href="#" class="naslov-proizvoda">Prosperitet</a>
-					<p class="cena-proizvoda"><span class="cena">1000</span> RSD</p>
-				</div>
-				<div class="proizvod">
-					<div class="slika-preview">
-			    		<img class="sveca-preview" src="../assets/images/Prviset/Pozitivna_energija.JPG" alt="Pozitivna energija">
-				   		<img class="sveca-hover" src="../assets/images/Sveca preview 2 small/Pozitivna_energija.jpg">
-					</div>
-					<a href="#" class="naslov-proizvoda">Pozitivna energija</a>
-					<p class="cena-proizvoda"><span class="cena">1000</span> RSD</p>
-				</div>
-				<div class="proizvod">
-					<div class="slika-preview">
-						<img class="sveca-preview" src="../assets/images/Prviset/Manifestovanje.JPG" alt="Manifestovanje">
-						<img class="sveca-hover" src="../assets/images/Sveca preview 2 small/Manifestovanje.jpg">
-					</div>
-					<a href="#" class="naslov-proizvoda">Manifestovanje</a>
-					<p class="cena-proizvoda"><span class="cena">1000</span> RSD</p>
-				</div>
-		    	<div class="proizvod">
-				</div>
+
 			</div>
 		</div>
 	</main>
