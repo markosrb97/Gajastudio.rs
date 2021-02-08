@@ -6,6 +6,9 @@
 .navigation-container ul li a {
   color: var(--nav-text-color);
 }
+.navigation-container {
+  position: relative;
+}
 #logo {
   background-color: white;
   border-radius: 50%;
