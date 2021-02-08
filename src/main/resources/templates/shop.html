@@ -38,9 +38,10 @@
 						<img class="sveca-hover" th:src="@{${'/assets/images/Sveca preview 2 small/'+candle.type+'.jpg'}}">
 					</div>
 					<a href="#" class="naslov-proizvoda" th:text="${candle.type}"> </a>
-					<p class="cena-proizvoda" th:text="${candle.price}"><span class="cena"> </span> RSD</p>
+					<p class="cena-proizvoda"><span class="cena" th:text="${candle.price}"> </span> RSD</p>
 				</div>
 
+				<div class="proizvod"></div>
 			</div>
 		</div>
 	</main>
