@@ -61,7 +61,11 @@ public class WebController {
 	}
 	
 	
-	// TODO  getMapping  "/shop/basket"
+	@GetMapping("/cart")
+	public String getCart(Model model) {
+		
+		return "basket";
+	}
 	
 	
 }
