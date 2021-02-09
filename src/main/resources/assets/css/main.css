@@ -7,6 +7,13 @@
 .d-flex {
   display: flex;
 }
+.l-border {
+  border-left: 1px solid var(--nav-text-color);
+}
+.r-border {
+  border-right: 1px solid var(--nav-text-color);
+}
+
 /* Navigation css*/
 .navigation-container {
   height: 150px;
@@ -85,6 +92,15 @@
 }
 /* Footer */
 footer {
-  background-color: blue;
-  height: 100px;
+  background-color: var(--background-color-onhover);
+}
+.footer-box {
+  text-align: center;
+  flex-basis: 50%;
+  padding: 10px;
+  color: var(--nav-text-color);
+}
+.footer-box img {
+  width: 30px;
+  padding: 0px 10px;
 }
