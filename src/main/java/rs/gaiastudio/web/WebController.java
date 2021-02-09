@@ -119,4 +119,19 @@ public class WebController {
 	}
 	
 	
+	//admin login page
+	
+	@GetMapping("/admin-login")
+	public String adminLogin() {
+		
+		return "adminLogin";
+	}
+	
+	@GetMapping("/admin")
+	public String adminPage() {
+		
+		return "adminPage";
+	}
+	
+	
 }
