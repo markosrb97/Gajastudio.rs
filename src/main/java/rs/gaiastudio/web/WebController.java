@@ -120,7 +120,6 @@ public class WebController {
 	
 	
 	//admin login page
-	
 	@GetMapping("/admin-login")
 	public String adminLogin() {
 		
@@ -129,9 +128,15 @@ public class WebController {
 	
 	@GetMapping("/admin")
 	public String adminPage() {
-		
+		//TODO
 		return "adminPage";
 	}
+	
+	/*	TODO:
+	 *  /admin/add
+	 *  /admin/remove
+	 *  /admin/edit
+	 */
 	
 	
 }
