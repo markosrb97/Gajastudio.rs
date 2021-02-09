@@ -9,6 +9,9 @@
   align-content: center;
   justify-content: center;
 }
+.navigation-container {
+  position: relative;
+}
 .container {
   width: 1000px;
   height: 100%;
@@ -16,6 +19,10 @@
 /* Navigation css*/
 .navigation-container ul li a {
   color: var(--nav-text-color);
+}
+#logo {
+  background-color: white;
+  border-radius: 50%;
 }
 /* Shop title*/
 .shop-naslov {

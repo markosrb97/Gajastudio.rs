@@ -10,7 +10,9 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-
+//TODO
+// promeni url za db
+// promeni url za admin page?
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
@@ -26,6 +28,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 			.authorizeRequests()
 				.antMatchers("/admin").hasRole("ADMIN")
 				.antMatchers("/admin/**").hasRole("ADMIN")
+				.antMatchers("/h2/**").hasRole("ADMIN")
+				.antMatchers("/h2").hasRole("ADMIN")
 				.antMatchers("/**").permitAll()
 				.and()
 			.formLogin()

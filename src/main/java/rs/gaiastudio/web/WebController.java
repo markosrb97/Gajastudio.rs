@@ -86,6 +86,7 @@ public class WebController {
 		candles = new ArrayList<Candle>();
 		candles = products.findAll();
 		Candle candle =  candles.get((int) id);
+		//System.out.println("sveca: " + candle.toString());
 		CartItem candleItem = new CartItem(candle);
 		candleItem.setQuantity(item.getQuantity());
 		if(session.getAttribute("cart") == null) {

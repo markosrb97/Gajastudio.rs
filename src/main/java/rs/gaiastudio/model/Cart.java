@@ -17,6 +17,7 @@ public class Cart extends ArrayList<CartItem>{
 	}
 	
 	public void addItem(CartItem item) {
+		//System.out.println("Ubacuje se u korpu: " + item.getCandle().toString());
 		if(this.contains(item)) {
 			int i = this.get(this.indexOf(item)).getQuantity();
 			i++;

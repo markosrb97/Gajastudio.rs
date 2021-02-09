@@ -61,7 +61,7 @@
                             <p class="cena-broj" ><span th:text="${candle.price}">  </span>  RSD</p>
                         </div>
                         <hr>
-                        <form class="kolicina-i-dugme" th:action="@{${'/cart/add-item/'+candle.id}}" th:object="${item}" method="POST">
+                        <form class="kolicina-i-dugme" th:action="@{${'/cart/add-item/'+(candle.id - 1)}}" th:object="${item}" method="POST">
                             <div class="kolicina">
                                 <p class="cena-naslov" >Količina</p> <input type="number" max="10" min="1" th:field="*{quantity}">
                             </div>
