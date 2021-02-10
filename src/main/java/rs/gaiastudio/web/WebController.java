@@ -33,6 +33,20 @@ public class WebController {
 	List<Candle> candles;
 	Cart cart;
 	
+	
+	@GetMapping("/")
+	public String getHome(Model model, HttpSession session) {
+		if(session.getAttribute("cart") != null) {
+			cart = (Cart) session.getAttribute("cart");
+			model.addAttribute("cart", cart);
+		}else {
+			Cart temp = new Cart();
+			model.addAttribute("cart", temp);
+		}
+		
+		return "index";
+	}
+	
 	@GetMapping("/order")
 	public String getForm(Model model) {
 		model.addAttribute("customer", new Customer());
@@ -117,11 +131,8 @@ public class WebController {
 		return "redirect:/cart";
 	}
 	
-	@PostMapping("/cart/checkout")
-	public String cartCheckout(Model model, HttpSession session) {
-		//TODO
-		return "checkout";
-	}
+	
+	
 	
 	
 	//admin login page
@@ -141,7 +152,7 @@ public class WebController {
 	 *  /admin/add
 	 *  /admin/remove
 	 *  /admin/edit
-	 *  send mail for new order
+	 *  send mail for every new order
 	 */
 	
 	

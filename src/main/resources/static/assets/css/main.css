@@ -48,6 +48,39 @@
   width: 150px;
   border-radius: 50%;
 }
+/* pocetak */
+
+.navigation-container:hover .cart {
+  color: var(--nav-text-color);
+  transition: 0.5s;
+}
+
+.navigation-container:hover .broj-proizovda {
+  border: 1px solid var(--nav-text-color);
+  transition: 0.39s;
+}
+
+.cart {
+  position: absolute;
+  right: 15%;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+}
+.cart p {
+  margin-right: 10px;
+}
+.broj-proizovda {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+/* kraj */
+
 /* Slideshow container */
 .slideshow-container {
   width: 100%;

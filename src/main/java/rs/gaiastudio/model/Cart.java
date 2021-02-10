@@ -7,6 +7,11 @@ public class Cart extends ArrayList<CartItem>{
 	private static final long serialVersionUID = 1L;
 	
 	private int sumPrice;
+	private int numberOfItems;
+	
+	public Cart() {
+		this.numberOfItems = 0;
+	}
 	
 	public int getSumPrice() {
 		sumPrice = 0;
@@ -14,6 +19,10 @@ public class Cart extends ArrayList<CartItem>{
 			sumPrice += this.get(i).getCandle().getPrice();
 		}
 		return sumPrice;
+	}
+	
+	public int getNumberOfItems() {
+		return numberOfItems;
 	}
 	
 	public void addItem(CartItem item) {
@@ -24,6 +33,7 @@ public class Cart extends ArrayList<CartItem>{
 		}else {
 			this.add(item);
 		}
+		numberOfItems++;
 	}
 	
 	
@@ -32,6 +42,7 @@ public class Cart extends ArrayList<CartItem>{
 			this.get(this.indexOf(item)).setQuantity(0);
 			this.remove(item);
 		}
+		numberOfItems--;
 	}
 	
 	// returns true if candle of passed type is found, otherwise returns false
