@@ -79,14 +79,12 @@ public class WebController {
 	}
 	
 	
-	
 	@PostMapping("/cart/add-item/{id}")
 	public String addToCart(@ModelAttribute CartItem item, Model model, @PathVariable long id, HttpSession session) {
 		
 		candles = new ArrayList<Candle>();
 		candles = products.findAll();
 		Candle candle =  candles.get((int) id);
-		//System.out.println("sveca: " + candle.toString());
 		CartItem candleItem = new CartItem(candle);
 		candleItem.setQuantity(item.getQuantity());
 		if(session.getAttribute("cart") == null) {
@@ -119,6 +117,12 @@ public class WebController {
 		return "redirect:/cart";
 	}
 	
+	@PostMapping("/cart/checkout")
+	public String cartCheckout(Model model, HttpSession session) {
+		//TODO
+		return "checkout";
+	}
+	
 	
 	//admin login page
 	@GetMapping("/admin-login")
@@ -137,6 +141,7 @@ public class WebController {
 	 *  /admin/add
 	 *  /admin/remove
 	 *  /admin/edit
+	 *  send mail for new order
 	 */
 	
 	

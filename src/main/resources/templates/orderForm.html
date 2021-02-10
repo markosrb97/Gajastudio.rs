@@ -32,16 +32,16 @@
         <div class="container">
 			<div class="left">
 				<div class="forma">
-					<form>
+					<form th:action="@{/order}" th:object="${customer}" method="POST">
 						<h2 class="porudzbina-title">Detalji za porudžbinu</h2>
 						<div class="razmak">
-							<input class="ime" type="text" placeholder="Ime"> <input class="prezime" type="text" placeholder="Prezime">
+							<input class="ime" type="text" placeholder="Ime" th:field="*{firstName}"> <input class="prezime" type="text" placeholder="Prezime" th:field="*{lastName}">
 						</div>
-						<input class="ulica" type="text" placeholder="Naziv i broj ulice">
+						<input class="ulica" type="text" placeholder="Naziv i broj ulice" th:field="*{address}">
 						<div class="razmak">
-							<input class="grad" type="text" placeholder="Grad"> <input class="zip-broj" type="text" placeholder="Poštanski broj">
+							<input class="grad" type="text" placeholder="Grad" th:field="*{city}"> <input class="zip-broj" type="text" placeholder="Poštanski broj" th:field="*{zipCode}">
 						</div>
-						<input class="broj-tel" type="text" placeholder="Broj telefona">
+						<input class="broj-tel" type="text" placeholder="Broj telefona" th:field="*{telNumber}">
 						<textarea maxlength="500" placeholder="Napomena (nije obavezno)"></textarea>
 						<div class="naruci">
 							<a href="#">&lt; Nazad u korpu</a> <input class="btn" type="submit" value="Naruči">
@@ -51,6 +51,7 @@
 				</div>
 			</div> 
 			<div class="right">
+				<!-- TODO -->
 				<div class="prikaz-proizvoda">
 					<div class="slika-proizvoda">
 						<img class="thumbnail-proizvod" src="../assets/images/Sveca preview 2 small/Ljubav_i_strast.jpg">
@@ -62,6 +63,7 @@
 						<p class="ime-proizvoda">Ljubav i strast</p> <p class="cena-proizvoda">1000 RSD</p>
 					</div>
 				</div>
+				<!-- for each item in cart.... -->
 				<div class="racun">
 					<p class="ukupno">Ukupno</p> <p class="ukupna-cena">1000 RSD</p>
 				</div>

@@ -23,7 +23,11 @@ public class Order {
 	}
 	
 	public String toString() {
-		return customer.toString();
+		String candleInfo = "";
+		for(int i = 0; i < candles.size(); i++) {
+			candleInfo += candles.get(i).toString();
+		}
+		return customer.toString() + "\n" + candleInfo;
 	}
 	
 }

@@ -12,13 +12,14 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 //TODO
-// promeni url za db pred release
-// promeni url za admin page?
+// change access link for h2 console before release
+
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	
-	
+	// no need for authentication because h2 console uses its own default authentication
+	// if not set to be ignored by spring security access is denied -> forbidden(403) 
 	@Override
 	public void configure(WebSecurity web) throws Exception{
 		web

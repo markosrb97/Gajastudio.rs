@@ -17,11 +17,10 @@ public class Cart extends ArrayList<CartItem>{
 	}
 	
 	public void addItem(CartItem item) {
-		//System.out.println("Ubacuje se u korpu: " + item.getCandle().toString());
-		if(this.contains(item)) {
-			int i = this.get(this.indexOf(item)).getQuantity();
+		if(this.containsCandle(item.getCandle().getType())) {
+			int i = this.get(this.indexOfCandle(item.getCandle().getType())).getQuantity();
 			i++;
-			this.get(this.indexOf(item)).setQuantity(i);
+			this.get(this.indexOfCandle(item.getCandle().getType())).setQuantity(i);
 		}else {
 			this.add(item);
 		}
@@ -33,6 +32,27 @@ public class Cart extends ArrayList<CartItem>{
 			this.get(this.indexOf(item)).setQuantity(0);
 			this.remove(item);
 		}
+	}
+	
+	// returns true if candle of passed type is found, otherwise returns false
+	public boolean containsCandle(String candleType) {
+		for(int i = 0; i < this.size(); i++) {
+			if(this.get(i).getCandle().getType() == candleType) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	// returns index of first occurrence of passed candle type
+	// -1 if not found
+	public int indexOfCandle(String candleType) {
+		for(int i = 0; i < this.size(); i++) {
+			if(this.get(i).getCandle().getType() == candleType) {
+				return i;
+			}
+		}
+		return -1;
 	}
 	
 
