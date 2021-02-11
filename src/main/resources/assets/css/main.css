@@ -116,6 +116,41 @@
     opacity: 1;
   }
 }
+/* Main */
+.page-title {
+  flex-direction: row;
+  margin-bottom: 80px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: var(--shop-text-color);
+  letter-spacing: 4px;
+  margin-top: 100px;
+}
+.page-title:before,
+.page-title:after {
+  content: "";
+  border-bottom: 1px solid var(--shop-text-color);
+  margin: auto;
+  width: 30px;
+}
+.page-title:before {
+  margin-right: 10px;
+}
+.page-title:after {
+  margin-left: 10px;
+}
+.text-main-page {
+  width: 700px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.3px;
+  font-style: italic;
+  color: #87807c;
+  font-family: "Sentinel A", "Sentinel B";
+  font-weight: 300;
+  margin: 10px auto;
+}
 /* Footer */
 footer {
   background-color: var(--background-color-onhover);
