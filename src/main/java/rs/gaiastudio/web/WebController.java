@@ -61,7 +61,15 @@ public class WebController {
 	}
 	
 	@GetMapping("/shop")
-	public String getShop(Model model) {
+	public String getShop(Model model, HttpSession session) {
+		
+		if(session.getAttribute("cart") != null) {
+			cart = (Cart) session.getAttribute("cart");
+			model.addAttribute("cart", cart);
+		}else {
+			Cart temp = new Cart();
+			model.addAttribute("cart", temp);
+		}
 
 		candles = new ArrayList<Candle>();
 		candles = products.findAll();
@@ -72,7 +80,16 @@ public class WebController {
 	
 	
 	@GetMapping("/shop/product/{id}")
-	public String getProduct(@PathVariable long id, Model model) {
+	public String getProduct(@PathVariable long id, Model model, HttpSession session) {
+		
+		if(session.getAttribute("cart") != null) {
+			cart = (Cart) session.getAttribute("cart");
+			model.addAttribute("cart", cart);
+		}else {
+			Cart temp = new Cart();
+			model.addAttribute("cart", temp);
+		}
+		
 		Optional<Candle> value = products.findById(id);
 		Candle candle = value.get();
 		model.addAttribute("candle", candle);
@@ -132,6 +149,13 @@ public class WebController {
 	}
 	
 	
+	@GetMapping("/contact")
+	public String contact() {
+		
+		return "contactForm";
+	}
+	
+	
 	
 	
 	
@@ -152,7 +176,7 @@ public class WebController {
 	 *  /admin/add
 	 *  /admin/remove
 	 *  /admin/edit
-	 *  send mail for every new order
+	 *  send mail for every new order   ->   https://www.baeldung.com/spring-email             ||            https://www.tutorialspoint.com/spring_boot/spring_boot_sending_email.htm
 	 */
 	
 	

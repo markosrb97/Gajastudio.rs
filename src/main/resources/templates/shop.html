@@ -21,15 +21,19 @@
 			<ul class="d-flex">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Shop</a></li>
-				<li><img src="../assets/images/moj logo.png" class="img-logo"/></li>
+				<li><img th:src="@{/assets/images/moj logo.png}" class="img-logo"/></li>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">About</a></li>
+				<div class="cart d-flex">
+					<p>Korpa</p> 
+					<div class="broj-proizovda" th:text="${cart.numberOfItems}">  </div>
+				</div>
 			</ul>
 		</div>
 	</nav>
 	<main class="body-style d-flex">
 		<div class="container">
-			<p class="shop-naslov d-flex">SHOP</p>
+			<p class="page-title d-flex">SHOP</p>
 			<div class="proizvodi-container d-flex">
 
 				<div class="proizvod" th:each="candle : ${candles}">
@@ -45,8 +49,22 @@
 			</div>
 		</div>
 	</main>
-	<footer>
+
+    <footer class="d-flex">
+		<div class="footer-box r-border">
+		<p class="footer-text-first">Imate pitanja ?</p>
+		<br>
+		<p class="footer-text-mid">Ukoliko zelite nesto da nas pitate <br> to mozete odraditi putem nasem mail adrese</p>
+		<br>
+		<p>mail@domen.rs</p>
+		</div>
+		<div class="footer-box l-border">
+		<p>Zapratite nas</p>
+		<img th:src="@{/assets/images/facebook-square-brands.png}" alt="">
+		<img th:src="@{/assets/images/instagram-brands.png}" alt="">
+		</div>
 	</footer>
+
 	<script src="../assets/js/main.js"></script>
 	<script src="../assets/js/jquery-3.5.1.min.js"></script>
 </body>

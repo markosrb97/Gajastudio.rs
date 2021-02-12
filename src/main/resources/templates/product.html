@@ -34,6 +34,10 @@
             </li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
+            <div class="cart d-flex">
+                <p>Korpa</p> 
+                <div class="broj-proizovda" th:text="${cart.numberOfItems}">  </div>
+            </div>
           </ul>
         </div>
       </nav>
@@ -76,5 +80,21 @@
         </div>
 
     </main>
+
+    <footer class="d-flex">
+        <div class="footer-box r-border">
+        <p class="footer-text-first">Imate pitanja ?</p>
+        <br>
+        <p class="footer-text-mid">Ukoliko zelite nesto da nas pitate <br> to mozete odraditi putem nasem mail adrese</p>
+        <br>
+        <p>mail@domen.rs</p>
+        </div>
+        <div class="footer-box l-border">
+        <p>Zapratite nas</p>
+        <img th:src="@{/assets/images/facebook-square-brands.png}" alt="">
+        <img th:src="@{/assets/images/instagram-brands.png}" alt="">
+        </div>
+    </footer>
+
 </body>
 </html>
