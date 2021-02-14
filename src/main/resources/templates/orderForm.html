@@ -42,7 +42,8 @@
 							<input class="grad" type="text" placeholder="Grad"> <input class="zip-broj" type="text" placeholder="Poštanski broj">
 						</div>
 						<input class="broj-tel" type="text" placeholder="Broj telefona">
-						<textarea maxlength="500" placeholder="Napomena (nije obavezno)"></textarea>
+						<textarea class="napomena" maxlength="500" placeholder="Napomena (nije obavezno)" oninput="maxWords()"></textarea>
+						<p class="poruka">Preostalo vam je još <span class="duzina-poruke">500</span> karaktera.</p>
 						<div class="naruci">
 							<a href="#">&lt; Nazad u korpu</a> <input type="submit" value="Naruči">
 						</div>
@@ -76,9 +77,9 @@
 	
 	
 
-
-	<script src="../assets/js/main.js"></script>
 	<script src="../assets/js/jquery-3.5.1.min.js"></script>
+	<script src="../assets/js/orderForm.js"></script>
+	
 </body>
 
 </html>

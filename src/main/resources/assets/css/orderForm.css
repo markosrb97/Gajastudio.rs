@@ -36,14 +36,11 @@ header {
   width: 1000px;
   height: auto;
   display: flex;
-  
-  
 }
 
 .left {
   flex-basis: 60%;
   border-right: 1px solid black;
-
 }
 
 .right {
@@ -165,7 +162,7 @@ header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid  #a8a19b;
+  border-bottom: 1px solid #a8a19b;
   padding-bottom: 20px;
 }
 .slika-proizvoda {
@@ -177,7 +174,6 @@ header {
   text-align: center;
   display: flex;
   flex-basis: 10%;
-  
 }
 
 .badge {
@@ -196,12 +192,12 @@ header {
 
 .badge p {
   font-family: 'Lora', serif;
-  color:#f1eee7;
+  color: #f1eee7;
 }
-.thumbnail-proizvod{
+.thumbnail-proizvod {
   height: 70px;
   width: 70px;
-  border-radius: 10px ;
+  border-radius: 10px;
 }
 
 .ime-i-cena {
@@ -210,7 +206,6 @@ header {
   align-items: center;
   flex-basis: 79%;
   padding-left: 10px;
-  
 }
 
 .ime-i-cena p {
@@ -235,17 +230,30 @@ header {
   font-size: 22px;
   font-weight: 600;
 }
-.dostava-napomena{
+.dostava-napomena {
   padding-top: 20px;
 }
 .dostava-napomena p {
   font-family: 'Lora', serif;
   font-size: 13px;
-  padding:10px 10px 10px 10px;
-  background-color:#a8a19b ;
+  padding: 10px 10px 10px 10px;
+  background-color: #a8a19b;
   border-radius: 5px;
   color: #f1eee7;
 }
 .dostava-napomena p::first-line {
   text-indent: -6px;
+}
+
+/* update */
+.poruka,
+.duzina-poruke {
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  color: #87807c;
+  margin-bottom: 30px;
+}
+
+.napomena {
+  word-wrap: break-word;
 }
