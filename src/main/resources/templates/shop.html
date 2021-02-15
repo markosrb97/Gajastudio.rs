@@ -19,11 +19,11 @@
 	<nav>
 		<div class="navigation-container">
 			<ul class="d-flex">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Shop</a></li>
+				<li><a th:href="@{/}">Home</a></li>
+				<li><a th:href="@{/shop}">Shop</a></li>
 				<li><img th:src="@{/assets/images/moj logo.png}" class="img-logo"/></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">About</a></li>
+				<li><a th:href="@{/contact}">Contact</a></li>
+				<li><a th:href="@{/about}">About</a></li>
 				<div class="cart d-flex">
 					<p>Korpa</p> 
 					<div class="broj-proizovda" th:text="${cart.numberOfItems}">  </div>
@@ -41,7 +41,7 @@
 						<img class="sveca-preview" th:src="@{${'/assets/images/Prviset/'+candle.type+'.JPG'}}">
 						<img class="sveca-hover" th:src="@{${'/assets/images/Sveca preview 2 small/'+candle.type+'.jpg'}}">
 					</div>
-					<a href="#" class="naslov-proizvoda" th:text="${candle.type}"> </a>
+					<a th:href="@{${'/shop/product/'+candle.id}}" class="naslov-proizvoda" th:text="${candle.type}"> </a>
 					<p class="cena-proizvoda"><span class="cena" th:text="${candle.price}"> </span> RSD</p>
 				</div>
 

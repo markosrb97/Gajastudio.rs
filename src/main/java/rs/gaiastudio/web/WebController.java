@@ -8,6 +8,8 @@ import java.util.Optional;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+
 
 import rs.gaiastudio.model.Candle;
 import rs.gaiastudio.model.Cart;
@@ -33,6 +36,8 @@ public class WebController {
 	List<Candle> candles;
 	Cart cart;
 	
+	@Autowired
+	private JavaMailSender mailSender;
 	
 	@GetMapping("/")
 	public String getHome(Model model, HttpSession session) {
@@ -44,11 +49,22 @@ public class WebController {
 			model.addAttribute("cart", temp);
 		}
 		
+
+		
 		return "index";
 	}
 	
 	@GetMapping("/order")
-	public String getForm(Model model) {
+	public String getForm(Model model, HttpSession session) {
+		
+		if(session.getAttribute("cart") != null) {
+			cart = (Cart) session.getAttribute("cart");
+			model.addAttribute("cart", cart);
+		}else {
+			Cart temp = new Cart();
+			model.addAttribute("cart", temp);
+		}
+		
 		model.addAttribute("customer", new Customer());
 		return "orderForm";
 	}
@@ -57,7 +73,16 @@ public class WebController {
 	public String submitOrder(@ModelAttribute Customer customer, Model model) {
 		Order order = new Order(customer);
 		model.addAttribute("order", order);
-		return "orderForm";
+		
+		SimpleMailMessage msg = new SimpleMailMessage();
+		//adresa na koju ce da se salje mejl za svaki order
+		msg.setTo("email-address");
+		msg.setSubject("order");
+		msg.setText(order.toString());
+		
+		mailSender.send(msg);
+		
+		return "tyForm";
 	}
 	
 	@GetMapping("/shop")
@@ -150,34 +175,18 @@ public class WebController {
 	
 	
 	@GetMapping("/contact")
-	public String contact() {
+	public String contact(Model model, HttpSession session) {
+		if(session.getAttribute("cart") != null) {
+			cart = (Cart) session.getAttribute("cart");
+			model.addAttribute("cart", cart);
+		}else {
+			Cart temp = new Cart();
+			model.addAttribute("cart", temp);
+		}
 		
 		return "contactForm";
 	}
 	
-	
-	
-	
-	
-	//admin login page
-	@GetMapping("/admin-login")
-	public String adminLogin() {
-		
-		return "adminLogin";
-	}
-	
-	@GetMapping("/admin")
-	public String adminPage() {
-		//TODO
-		return "adminPage";
-	}
-	
-	/*	TODO:
-	 *  /admin/add
-	 *  /admin/remove
-	 *  /admin/edit
-	 *  send mail for every new order   ->   https://www.baeldung.com/spring-email             ||            https://www.tutorialspoint.com/spring_boot/spring_boot_sending_email.htm
-	 */
 	
 	
 }

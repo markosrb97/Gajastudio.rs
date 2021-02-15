@@ -16,7 +16,7 @@ public class Cart extends ArrayList<CartItem>{
 	public int getSumPrice() {
 		sumPrice = 0;
 		for(int i = 0; i < this.size(); i++) {
-			sumPrice += this.get(i).getCandle().getPrice();
+			sumPrice += (this.get(i).getCandle().getPrice() * this.get(i).getQuantity());
 		}
 		return sumPrice;
 	}

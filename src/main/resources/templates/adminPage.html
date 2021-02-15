@@ -1,1 +1,30 @@
-admin page
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/assets/css/admin.css}" />
+    <title>Admin page</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <a href="#">add new item</a>
+
+        <div class="p-container" th:each="candle : ${candles}">
+            <div class="proizvod" >
+                <div class="slika-preview">
+                    <img class="sveca-preview" th:src="@{${'/assets/images/Prviset/'+candle.type+'.JPG'}}">
+                    <img class="sveca-hover" th:src="@{${'/assets/images/Sveca preview 2 small/'+candle.type+'.jpg'}}">
+                </div>
+                <a th:href="@{${'/shop/product/'+candle.id}}" class="naslov-proizvoda" th:text="${candle.type}"> </a>
+                <p class="cena-proizvoda"><span class="cena" th:text="${candle.price}"> </span> RSD</p>
+            </div>
+            <a href="#">remove</a>
+            <a href="#">edit</a>
+        </div>
+    </div>
+
+</body>
+</html>

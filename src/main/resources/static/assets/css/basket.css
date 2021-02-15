@@ -135,23 +135,25 @@ td {
   margin-top: 20px;
 }
 
-.check-out input {
+.check-out a {
+  text-align: center;
+  text-decoration: none;
   display: block;
   float: right;
   height: 45px;
   width: 100px;
-  font-size: large;
+  font-size: 24px;
   color: #f1eee7;
   background-color: #a8a19b;
   cursor: pointer;
   font-family: 'Playfair Display', serif;
   border: none;
 }
-.check-out input:focus {
+.check-out a:focus {
   outline: none;
 }
 
-.check-out input:hover {
+.check-out a:hover {
   background-color: #87807c;
   transition: 0.4s;
 }

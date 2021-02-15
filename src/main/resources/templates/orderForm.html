@@ -51,21 +51,21 @@
 				</div>
 			</div> 
 			<div class="right">
-				<!-- TODO -->
-				<div class="prikaz-proizvoda">
+
+				<div class="prikaz-proizvoda" th:each="item : ${cart}">
 					<div class="slika-proizvoda">
-						<img class="thumbnail-proizvod" src="../assets/images/Sveca preview 2 small/Ljubav_i_strast.jpg">
+						<img class="thumbnail-proizvod" th:src="@{${'/assets/images/Sveca preview 2 small/'+item.candle.type+'.jpg'}}">
 						<div class="badge">
-							<p>2</p>
+							<p th:text="${item.quantity}"> </p>
 						</div>
 					</div>
 					<div class="ime-i-cena">
-						<p class="ime-proizvoda">Ljubav i strast</p> <p class="cena-proizvoda">1000 RSD</p>
+						<p class="ime-proizvoda" th:text="${item.candle.type}"> </p> <p class="cena-proizvoda" > <span th:text="${item.candle.price} * ${item.quantity}"> </span> RSD</p>
 					</div>
 				</div>
-				<!-- for each item in cart.... -->
+
 				<div class="racun">
-					<p class="ukupno">Ukupno</p> <p class="ukupna-cena">1000 RSD</p>
+					<p class="ukupno">Ukupno</p> <p class="ukupna-cena" >  <span th:text="${cart.sumPrice}"> </span> RSD</p>
 				</div>
 				<div class="dostava-napomena">
 					<p><sup>*</sup>U cenu nije uključena poštarina jer cena varira u zavisnosti od kurirske službe.</p>
