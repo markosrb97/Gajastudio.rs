@@ -7,11 +7,14 @@
 .d-flex {
   display: flex;
 }
-.l-border {
-  border-left: 1px solid var(--nav-text-color);
+.f-right {
+  float: right;
 }
-.r-border {
-  border-right: 1px solid var(--nav-text-color);
+.f-left {
+  float: left;
+}
+.w-350 {
+  width: 350px;
 }
 /* Navigation css*/
 .navigation-container {
@@ -152,6 +155,10 @@
   margin: 10px auto;
 }
 /* Footer */
+.container-footer {
+  width: 1000px;
+  margin: 0px auto;
+}
 footer {
   background-color: var(--background-color-onhover);
 }
