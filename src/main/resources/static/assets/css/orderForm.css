@@ -249,3 +249,15 @@ header {
 .dostava-napomena p::first-line {
   text-indent: -6px;
 }
+
+.poruka,
+.duzina-poruke {
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  color: #87807c;
+  margin-bottom: 30px;
+}
+
+.napomena {
+  word-wrap: break-word;
+}

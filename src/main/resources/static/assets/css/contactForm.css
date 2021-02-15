@@ -149,3 +149,13 @@ margin-bottom: 15px;
     font-size: 12px;
     font-weight: 500;
 }
+
+.polje {
+    word-wrap: break-word;
+  }
+  
+  .poruka p,
+  .broj-reci {
+    font-family: 'Lora', serif;
+    color: #87807c;
+  }

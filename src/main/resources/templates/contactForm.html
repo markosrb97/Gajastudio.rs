@@ -73,7 +73,8 @@
                                 </div>
                                 <div class="poruka">
                                     <label>PORUKA<sup>*</sup></label>
-                                    <textarea class="polje" maxlength="1000"></textarea>
+                                    <textarea class="polje" maxlength="1000" oninput="maxWords()"></textarea>
+                                    <p>Preostalo vam je još <span class="broj-reci">1000</span> karaktera.</p>
                                     <input class="posalji" type="submit" value="POŠALJI">
                                 </div>
                             </form>
@@ -100,7 +101,8 @@
         </div>
     </footer>
 
-	<script src="../assets/js/main.js"></script>
-	<script src="../assets/js/jquery-3.5.1.min.js"></script>
+	<script th:src="@{/assets/js/jquery-3.5.1.min.js}"></script>
+    <script th:src="@{/assets/js/contactForm.js}"></script>
+
 </body>
 </html>
