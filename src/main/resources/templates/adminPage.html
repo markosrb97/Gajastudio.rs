@@ -1,59 +1,21 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" th:href="@{/assets/css/admin.css}" />
-    <title>Admin page</title>
-</head>
-<body>
-
-    <div class="wrapper">
-        <a href="#">add new item</a>
-
-        <div class="p-container" th:each="candle : ${candles}">
-            <div class="proizvod" >
-                <div class="slika-preview">
-                    <img class="sveca-preview" th:src="@{${'/assets/images/Prviset/'+candle.type+'.JPG'}}">
-                    <img class="sveca-hover" th:src="@{${'/assets/images/Sveca preview 2 small/'+candle.type+'.jpg'}}">
-                </div>
-                <a th:href="@{${'/shop/product/'+candle.id}}" class="naslov-proizvoda" th:text="${candle.type}"> </a>
-                <p class="cena-proizvoda"><span class="cena" th:text="${candle.price}"> </span> RSD</p>
-            </div>
-            <a href="#">remove</a>
-            <a href="#">edit</a>
-        </div>
-    </div>
-
-=======
-<html>
-<head>
-    <meta charset="UTF-8">
     <title>Gaia Studio | Admin</title>
-    <link rel="stylesheet" href="../assets/css/adminPage.css"/>
+    <link rel="stylesheet" th:href="@{/assets/css/adminPage.css}"/>
 </head>
 <body>
     <div class="container">
         <a href="#" class="dodaj">Dodaj nov proizvod</a>
-        <div class="product">
+        <div class="product" th:each="candle : ${candles}">
             <div class="slika-preview">
-                <img class="sveca-preview" src="../assets/images/Prviset/Ljubav_i_strast.JPG" alt="Duboki mir">
-                <p class="naslov-proizvoda">Ljubav i strast</p>
-                <p class="cena-proizvoda"><span class="cena">1000</span> RSD</p>
+                <img class="sveca-preview" th:src="@{${'/assets/images/Prviset/'+candle.type+'.JPG'}}">
+                <p class="naslov-proizvoda" th:text="${candle.type}"> </p>
+                <p class="cena-proizvoda"><span class="cena" th:text="${candle.price}"> </span> RSD</p>
             </div>
             <div class="opis">
-                    <p>Da li vam fali, ili samo želite više ljubavi i strasti u vašem životu? Ako je odgovor da, onda će vam ova
-                    sveća pomoći u tome.</p>
-                    
-                    <p>Uz naš preporučeni ritual koji dobijate uz sveću oplemenićete vaš život iskrenim
-                    osećanjima zahvalnosti i ljubavi, ali i strasti prema životu. Privucite sebi ljubav
-                    koju već zaslužujete, i koja čeka da se desi. Probudite strast u vašem životu.</p>
-                    
-                    <p>Napravljena je od prehrambenog parafinskog voska, sa mirisnim notama nežnog
-                    poljskog cveća. Ukrašena je laticama ruže koje dodaju ljubavnu i magijsku energiju
-                    ovoj sveći.</p>
+                    <p th:text="${candle.description}"> </p>
                     
                     <div class="linkovi">
                         <a href="#" class="izmeni">Izmeni</a>
@@ -63,6 +25,5 @@
             
         </div>
     </div>
->>>>>>> Janko-main
 </body>
 </html>

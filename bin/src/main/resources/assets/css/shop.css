@@ -1,51 +1,55 @@
 @import url("colors.css");
-/* Body */
 * {
   margin: 0px;
   padding: 0px;
 }
+.navigation-container ul li a {
+  color: var(--nav-text-color);
+}
 .body-style {
   background-color: #f1eee7;
+  display: flex;
   align-content: center;
   justify-content: center;
 }
 .container {
   width: 1000px;
-  height: 100%;
+  height: auto;
 }
-/* Navigation css*/
-.navigation-container ul li a {
-  color: var(--nav-text-color);
-}
-/* Shop title*/
 .shop-naslov {
+  display: flex;
   flex-direction: row;
   margin-bottom: 80px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  color: var(--shop-text-color);
+  color: #a8a19b;
   letter-spacing: 4px;
   margin-top: 100px;
 }
 .shop-naslov:before,
 .shop-naslov:after {
   content: "";
-  border-bottom: 1px solid var(--shop-text-color);
+  border-bottom: 1px solid #a8a19b;
   margin: auto;
   width: 30px;
 }
+
 .shop-naslov:before {
   margin-right: 10px;
 }
+
 .shop-naslov:after {
   margin-left: 10px;
 }
+
 .proizvodi-container {
   width: 100%;
   height: 100%;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .proizvod {
   width: 300px;
   height: 400px;
@@ -53,11 +57,13 @@
   margin-bottom: 30px;
   position: relative;
 }
+
 .slika-preview {
   width: 280px;
   height: 280px;
   border: 8px solid white;
 }
+
 .sveca-preview {
   width: 280px;
   height: 280px;
@@ -66,6 +72,7 @@
   top: 0;
   z-index: 0;
 }
+
 .sveca-hover {
   width: 280px;
   height: 280px;
@@ -75,10 +82,12 @@
   left: 8px;
   opacity: 0;
 }
+
 .sveca-hover:hover {
   opacity: 10;
   transition: 0.5s;
 }
+
 .naslov-proizvoda {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -89,14 +98,17 @@
   color: #87807c;
   display: block;
 }
+
 .cena-proizvoda {
   font-family: "Raleway", sans-serif;
-  color: var(--shop-text-color);
+  color: #a8a19b;
   font-style: italic;
   font-weight: 500;
 }
+
 .cena {
   font-family: "Raleway", sans-serif;
+  color: #a8a19b;
   font-style: italic;
   font-weight: 500;
   font-size: 20px;

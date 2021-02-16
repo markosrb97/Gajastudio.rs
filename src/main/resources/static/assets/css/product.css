@@ -9,19 +9,13 @@
 .navigation-container {
   position: relative;
 }
-
+#logo {
+  background-color: white;
+  border-radius: 50%;
+}
 .img-logo {
   background: white;
 }
-
-.cart {
-  color: var(--nav-text-color);
-}
-
-.broj-proizovda {
-  border-color: 1px solid var(--nav-text-color) ;
-}
-
 .body-style {
   background-color: #f1eee7;
   display: flex;

@@ -6,10 +6,6 @@
 .navigation-container ul li a {
   color: var(--nav-text-color);
 }
-
-.navigation-container {
-  position: relative;
-}
 .body-style {
   background-color: #f1eee7;
   display: flex;
