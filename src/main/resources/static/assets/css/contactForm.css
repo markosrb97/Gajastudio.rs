@@ -9,6 +9,14 @@
 .navigation-container ul li a {
   color: var(--nav-text-color);
 }
+
+.cart {
+    color: var(--nav-text-color);
+}
+
+.broj-proizovda {
+    border-color: 1px solid var(--nav-text-color) ;
+}
 .body-style {
   background-color: #f1eee7;
   display: flex;
