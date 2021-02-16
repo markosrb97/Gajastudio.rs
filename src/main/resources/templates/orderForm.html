@@ -41,17 +41,22 @@
 						<div class="razmak">
 							<input class="grad" type="text" placeholder="Grad" th:field="*{city}"> <input class="zip-broj" type="text" placeholder="Poštanski broj" th:field="*{zipCode}">
 						</div>
+<<<<<<< HEAD
 						<input class="broj-tel" type="text" placeholder="Broj telefona" th:field="*{telNumber}">
+=======
+						<input class="broj-tel" type="text" placeholder="Broj telefona">
+>>>>>>> Janko-main
 						<textarea class="napomena" maxlength="500" placeholder="Napomena (nije obavezno)" oninput="maxWords()"></textarea>
 						<p class="poruka">Preostalo vam je još <span class="duzina-poruke">500</span> karaktera.</p>
 						<div class="naruci">
-							<a href="#">&lt; Nazad u korpu</a> <input class="btn" type="submit" value="Naruči">
+							<a href="#">&lt; Nazad u korpu</a> <input type="submit" value="Naruči">
 						</div>
 						
 					</form>
 				</div>
 			</div> 
 			<div class="right">
+<<<<<<< HEAD
 
 				<div class="prikaz-proizvoda" th:each="item : ${cart}">
 					<div class="slika-proizvoda">
@@ -67,6 +72,21 @@
 
 				<div class="racun">
 					<p class="ukupno">Ukupno</p> <p class="ukupna-cena" >  <span th:text="${cart.sumPrice}"> </span> RSD</p>
+=======
+				<div class="prikaz-proizvoda">
+					<div class="slika-proizvoda">
+						<img class="thumbnail-proizvod" src="../assets/images/Sveca preview 2 small/Ljubav_i_strast.jpg">
+						<div class="badge">
+							<p>2</p>
+						</div>
+					</div>
+					<div class="ime-i-cena">
+						<p class="ime-proizvoda">Ljubav i strast</p> <p class="cena-proizvoda">1000 RSD</p>
+					</div>
+				</div>
+				<div class="racun">
+					<p class="ukupno">Ukupno</p> <p class="ukupna-cena">1000 RSD</p>
+>>>>>>> Janko-main
 				</div>
 				<div class="dostava-napomena">
 					<p><sup>*</sup>U cenu nije uključena poštarina jer cena varira u zavisnosti od kurirske službe.</p>
@@ -79,9 +99,15 @@
 	
 	
 
+<<<<<<< HEAD
 	<script th:src="@{/assets/js/jquery-3.5.1.min.js}"></script>
 	<script th:src="@{assets/js/orderForm.js}"></script>
 
+=======
+	<script src="../assets/js/jquery-3.5.1.min.js"></script>
+	<script src="../assets/js/orderForm.js"></script>
+	
+>>>>>>> Janko-main
 </body>
 
 </html>
