@@ -9,6 +9,12 @@
 .navigation-container {
   position: relative;
 }
+.cart{
+  color: var(--nav-text-color);
+}
+.broj-proizovda{
+  border-color: var(--nav-text-color);
+}
 #logo {
   background-color: white;
   border-radius: 50%;
