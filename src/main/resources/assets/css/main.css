@@ -142,8 +142,11 @@
 .page-title:after {
   margin-left: 10px;
 }
+.text-container {
+  margin: 0px auto;
+  width: 720px;
+}
 .text-main-page {
-  width: 700px;
   text-align: center;
   font-size: 30px;
   line-height: 40px;
@@ -182,6 +185,7 @@ footer {
   padding: 10px 0px;
 }
 @media only screen and (max-width: 480px) {
+  /* Navigation css*/
   #logo {
     display: none;
   }
@@ -195,9 +199,13 @@ footer {
   }
   .navigation-container ul li {
     display: block;
-    margin: 0 auto;
+    margin: 0px auto;
   }
   .navigation-container ul li a {
     color: var(--nav-text-color);
   }
+  .cart {
+    top: 0%;
+  }
+  /* Main */
 }
