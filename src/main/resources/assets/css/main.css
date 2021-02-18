@@ -1,4 +1,4 @@
-@import url('colors.css');
+@import url("colors.css");
 /* Body */
 * {
   margin: 0px;
@@ -40,7 +40,7 @@
   text-decoration: none;
   color: #ffffff;
   padding: 0px 15px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   letter-spacing: 2px;
   font-weight: 300;
   text-transform: uppercase;
@@ -68,7 +68,7 @@
 .cart {
   position: absolute;
   right: 15%;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   letter-spacing: 2px;
   font-weight: 300;
   text-transform: uppercase;
@@ -123,7 +123,7 @@
 .page-title {
   flex-direction: row;
   margin-bottom: 80px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: var(--shop-text-color);
   letter-spacing: 4px;
@@ -131,7 +131,7 @@
 }
 .page-title:before,
 .page-title:after {
-  content: '';
+  content: "";
   border-bottom: 1px solid var(--shop-text-color);
   margin: auto;
   width: 30px;
@@ -150,7 +150,7 @@
   letter-spacing: 0.3px;
   font-style: italic;
   color: #87807c;
-  font-family: 'Sentinel A', 'Sentinel B';
+  font-family: "Sentinel A", "Sentinel B";
   font-weight: 300;
   margin: 10px auto;
 }
@@ -170,7 +170,7 @@ footer {
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 400;
-  font-family: 'proxima-nova', sans-serif;
+  font-family: "proxima-nova", sans-serif;
   letter-spacing: 0.2em;
 }
 .footer-box img {
@@ -181,18 +181,15 @@ footer {
   font-size: 9px;
   padding: 10px 0px;
 }
-
 @media only screen and (max-width: 480px) {
   #logo {
     display: none;
   }
-
   .navigation-container {
     background-color: var(--background-color-onhover);
     height: 120px;
     position: relative;
   }
-
   .navigation-container ul {
     display: block;
   }
@@ -201,6 +198,6 @@ footer {
     margin: 0 auto;
   }
   .navigation-container ul li a {
-    color: black;
+    color: var(--nav-text-color);
   }
 }
