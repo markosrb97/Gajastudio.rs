@@ -1,4 +1,4 @@
-@import url("colors.css");
+@import url('colors.css');
 /* Body */
 * {
   margin: 0px;
@@ -6,6 +6,15 @@
 }
 .d-flex {
   display: flex;
+}
+.f-right {
+  float: right;
+}
+.f-left {
+  float: left;
+}
+.w-350 {
+  width: 350px;
 }
 /* Navigation css*/
 .navigation-container {
@@ -31,7 +40,7 @@
   text-decoration: none;
   color: #ffffff;
   padding: 0px 15px;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
   font-weight: 300;
   text-transform: uppercase;
@@ -40,30 +49,35 @@
   color: var(--nav-text-color);
   transition: 0.5s;
 }
+.navigation-container:hover .cart {
+  color: var(--nav-text-color);
+  transition: 0.5s;
+}
 .navigation-container:hover ul li .img-logo {
   background-color: var(--background-color-onhover);
   transition: 0.39s;
+}
+.navigation-container:hover .broj-proizovda {
+  border: 1px solid var(--nav-text-color);
+  transition: 0.39s;
+}
+.logo-mob {
+  display: none;
 }
 .img-logo {
   width: 150px;
   border-radius: 50%;
 }
-/* pocetak */
-
-.navigation-container:hover .cart {
-  color: var(--nav-text-color);
-  transition: 0.5s;
+.menu-button {
+  display: none;
 }
-
-.navigation-container:hover .broj-proizovda {
-  border: 1px solid var(--nav-text-color);
-  transition: 0.39s;
+.cart-mobile {
+  display: none;
 }
-
 .cart {
   position: absolute;
   right: 15%;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
   font-weight: 300;
   text-transform: uppercase;
@@ -79,8 +93,6 @@
   border: 1px solid white;
   border-radius: 100%;
 }
-/* kraj */
-
 /* Slideshow container */
 .slideshow-container {
   width: 100%;
@@ -120,7 +132,7 @@
 .page-title {
   flex-direction: row;
   margin-bottom: 80px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   color: var(--shop-text-color);
   letter-spacing: 4px;
@@ -128,7 +140,7 @@
 }
 .page-title:before,
 .page-title:after {
-  content: "";
+  content: '';
   border-bottom: 1px solid var(--shop-text-color);
   margin: auto;
   width: 30px;
@@ -139,19 +151,26 @@
 .page-title:after {
   margin-left: 10px;
 }
+.text-container {
+  margin: 0px auto;
+  width: 720px;
+}
 .text-main-page {
-  width: 700px;
   text-align: center;
   font-size: 30px;
   line-height: 40px;
   letter-spacing: 0.3px;
   font-style: italic;
   color: #87807c;
-  font-family: "Sentinel A", "Sentinel B";
+  font-family: 'Sentinel A', 'Sentinel B';
   font-weight: 300;
   margin: 10px auto;
 }
 /* Footer */
+.container-footer {
+  width: 1000px;
+  margin: 0px auto;
+}
 footer {
   background-color: var(--background-color-onhover);
 }
@@ -163,7 +182,7 @@ footer {
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 400;
-  font-family: "proxima-nova", sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   letter-spacing: 0.2em;
 }
 .footer-box img {
@@ -173,4 +192,103 @@ footer {
 .footer-text-mid {
   font-size: 9px;
   padding: 10px 0px;
+}
+@media only screen and (max-width: 770px) {
+  /* Navigation css*/
+  #logo {
+    display: none;
+  }
+  .logo-mob {
+    display: block;
+    text-align: center;
+    z-index: 999;
+    height: 100%;
+  }
+  .img-logo-mob {
+    width: 120px;
+    border-radius: 50%;
+    background-color: var(--background-color-onhover);
+    margin-top: 20px;
+    border: 10px solid var(--background-color-onhover);
+  }
+  .navigation-container {
+    background-color: var(--background-color-onhover);
+    height: 120px;
+    position: relative;
+  }
+  .navigation-container ul {
+    display: none;
+    padding: 0;
+    z-index: 0;
+  }
+  .navigation-container ul li:nth-of-type(1) {
+    padding-top: 40px;
+  }
+  .navigation-container ul li {
+    width: 100%;
+    background-color: var(--background-color-onhover);
+    display: block;
+    margin: 0px auto;
+    padding: 20px 0;
+  }
+  .navigation-container ul li a {
+    color: var(--nav-text-color);
+  }
+  .cart {
+    display: none;
+  }
+  .cart-mobile {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--nav-text-color);
+    padding: 9px 9px 0 0;
+  }
+  .cart-mobile p {
+    margin-right: 5px;
+  }
+  .broj-proizovda {
+    border-color: var(--nav-text-color);
+  }
+  .menu-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    padding: 9px 0 0 9px;
+  }
+  .menu-button img {
+    width: 10px;
+  }
+  .menu-button p {
+    display: inline;
+    font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--nav-text-color);
+  }
+  /* Main */
+  .text-container {
+    width: 100%;
+  }
+  /* Footer */
+  .container-footer {
+    width: 100%;
+  }
+  .w-350 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .cart {
+    top: 10px;
+    right: 10px;
+  }
 }

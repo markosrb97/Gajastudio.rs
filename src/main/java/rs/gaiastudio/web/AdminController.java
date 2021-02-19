@@ -93,11 +93,10 @@ public class AdminController {
 		
 		//TODO
 		
-		return "edit";
+		return "adminEdit";
 	}
 	
 	/*	TODO:
-	 *  /admin/add
 	 *  /admin/remove
 	 *  /admin/edit
 	 */
