@@ -38,8 +38,8 @@
 
 				<div class="proizvod" th:each="candle : ${candles}">
 					<div class="slika-preview">
-						<img class="sveca-preview" th:src="@{${'/assets/images/Prviset/'+candle.type+'.JPG'}}">
-						<img class="sveca-hover" th:src="@{${'/assets/images/Sveca preview 2 small/'+candle.type+'.jpg'}}">
+						<img class="sveca-preview" th:src="@{${'/assets/images/1/'+candle.type+'.jpg'}}">
+						<img class="sveca-hover" th:src="@{${'/assets/images/2/'+candle.type+'.jpg'}}">
 					</div>
 					<a th:href="@{${'/shop/product/'+candle.id}}" class="naslov-proizvoda" th:text="${candle.type}"> </a>
 					<p class="cena-proizvoda"><span class="cena" th:text="${candle.price}"> </span> RSD</p>

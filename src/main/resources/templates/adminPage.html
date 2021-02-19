@@ -7,10 +7,10 @@
 </head>
 <body>
     <div class="container">
-        <a href="#" class="dodaj">Dodaj nov proizvod</a>
+        <a th:href="@{/admin/add}" class="dodaj">Dodaj nov proizvod</a>
         <div class="product" th:each="candle : ${candles}">
             <div class="slika-preview">
-                <img class="sveca-preview" th:src="@{${'/assets/images/Prviset/'+candle.type+'.JPG'}}">
+                <img class="sveca-preview" th:src="@{${'/assets/images/1/'+candle.type+'.jpg'}}">
                 <p class="naslov-proizvoda" th:text="${candle.type}"> </p>
                 <p class="cena-proizvoda"><span class="cena" th:text="${candle.price}"> </span> RSD</p>
             </div>
