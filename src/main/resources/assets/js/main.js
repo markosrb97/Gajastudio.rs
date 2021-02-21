@@ -25,10 +25,12 @@ function showSlides() {
 function menuShowHide() {
   
   if (menuSwitch == 0) {
-    $("#menu-list").slideDown();
+    $("#menu-list").slideDown(500);
+    $(".shop-naslov").animate({'margin-top': '+300px', opacity: 1}, 500);
     menuSwitch = 1;
   } else {
-    $("#menu-list").slideUp();
+    $("#menu-list").slideUp(500);
+    $(".shop-naslov").animate({'margin-top': '100px', opacity: 1}, 500);
     menuSwitch = 0;
   }
   
