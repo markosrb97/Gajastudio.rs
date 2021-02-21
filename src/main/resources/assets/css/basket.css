@@ -56,13 +56,12 @@
   border: 1px solid #a8a19b;
   display: flex;
   justify-content: center;
-  padding: 60px;
 }
 form {
+  padding: 30px;
   width: 100%;
 }
 .slika-proizvoda img {
-  height: 150px;
   width: 150px;
   border-radius: 10%;
 }
@@ -162,4 +161,21 @@ p {
 .ukupno p {
   margin-left: 50px;
   font-size: 25px;
+}
+@media only screen and (max-width: 770px) {
+  .container {
+    width: 100%;
+  }
+  .basket-container {
+    padding: 0;
+  }
+  .slika-proizvoda {
+    width: 100px;
+  }
+  .slika-proizvoda img {
+    width: 100px;
+  }
+  .check-out {
+    text-align: center;
+  }
 }
