@@ -1,4 +1,4 @@
-@import url('colors.css');
+@import url("colors.css");
 /* Body */
 * {
   margin: 0px;
@@ -11,11 +11,9 @@
 .navigation-container {
   position: relative;
 }
-
 .cart {
   color: var(--nav-text-color);
 }
-
 .broj-proizovda {
   border-color: var(--nav-text-color);
 }
@@ -29,12 +27,11 @@
   width: 1000px;
   height: 100%;
 }
-
 /* Shop title*/
 .shop-naslov {
   flex-direction: row;
   margin-bottom: 80px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: var(--shop-text-color);
   letter-spacing: 4px;
@@ -42,7 +39,7 @@
 }
 .shop-naslov:before,
 .shop-naslov:after {
-  content: '';
+  content: "";
   border-bottom: 1px solid var(--shop-text-color);
   margin: auto;
   width: 30px;
@@ -95,7 +92,7 @@
 .naslov-proizvoda {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 21px;
   font-weight: 400;
   text-decoration: none;
@@ -103,13 +100,13 @@
   display: block;
 }
 .cena-proizvoda {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--shop-text-color);
   font-style: italic;
   font-weight: 500;
 }
 .cena {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 20px;
