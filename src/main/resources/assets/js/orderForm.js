@@ -17,9 +17,13 @@ function maxWords(){
 function showHideMenu() {
     if (prekidac == 0) {
         $(".meni-spusten").slideDown();
+        $(".strelica-gore").show();
+        $(".strelica-dole").hide();
         prekidac = 1;
       } else {
         $(".meni-spusten").slideUp();
+        $(".strelica-dole").show();
+        $(".strelica-gore").hide();
         prekidac = 0;
       }
 }
