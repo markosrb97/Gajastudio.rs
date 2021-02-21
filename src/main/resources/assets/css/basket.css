@@ -178,4 +178,15 @@ p {
   .check-out {
     text-align: center;
   }
+  .cena-prozivoda,
+  .ukupna-cena {
+    font-size: 15px;
+  }
+  .opis-proizvoda {
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  .ukupno {
+    text-align: right;
+  }
 }
