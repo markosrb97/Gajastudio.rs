@@ -36,19 +36,34 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="navigation-container">
-          <ul class="d-flex">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li id="logo">
-              <img src="../assets/images/moj logo.png" class="img-logo" />
-            </li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
+      <div class="navigation-container">
+        <div class="logo-mob">
+          <img src="../assets/images/moj logo.png" class="img-logo-mob" />
         </div>
-      </nav>
+        <!--------------------->
+        <ul class="d-flex" id="menu-list">
+          <li><a href="#">Početna</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li id="logo">
+            <img src="../assets/images/moj logo.png" class="img-logo" />
+          </li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">O nama</a></li>
+          <div class="cart d-flex">
+            <p>Korpa</p>
+            <div class="broj-proizovda">5</div>
+          </div>
+        </ul>
+        <!-- Update za mobile-->
+        <div class="menu-button" id="menu-button" onclick="menuShowHide()">
+          <img src="../assets/images/iconmonstr-menu-1-240.png" />
+          <p>MENU</p>
+        </div>
+
+        <div class="cart-mobile">
+          <p>Korpa</p>
+          <div class="broj-proizovda">5</div>
+        </div>
 </header>
     <main class="body-style">
       <div class="container">
@@ -103,5 +118,28 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div class="container-footer d-flex">
+        <div class="footer-box">
+          <div class="f-right w-350">
+            <p class="footer-text-first">Imate pitanja ?</p>
+            <br />
+            <p class="footer-text-mid">
+              Ukoliko zelite nesto da nas pitate <br />
+              to mozete odraditi putem nasem mail adrese
+            </p>
+            <br />
+            <p>mail@domen.rs</p>
+          </div>
+        </div>
+        <div class="footer-box">
+          <div class="f-left w-350">
+            <p>Zapratite nas</p>
+            <img src="../assets/images/facebook-square-brands.png" alt="" />
+            <img src="../assets/images/instagram-brands.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

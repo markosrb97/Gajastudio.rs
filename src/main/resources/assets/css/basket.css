@@ -13,6 +13,18 @@
   position: relative;
 }
 
+.cart {
+  color: var(--nav-text-color);
+}
+
+.broj-proizovda {
+  border-color: var(--nav-text-color);
+}
+
+.img-logo {
+  background-color: white;
+}
+
 .body-style {
   background-color: #f1eee7;
   display: flex;
@@ -52,7 +64,6 @@
 }
 
 .basket-container {
-  width: 100%;
   height: 600px;
   background: white;
   display: flex;
@@ -175,8 +186,13 @@ td {
   margin-bottom: 20px;
 }
 
-.ukupno span,
-p {
+.ukupno span {
+  display: inline;
+  font-family: "Playfair Display", serif;
+  color: #87807c;
+}
+
+.ukupno p {
   display: inline;
   font-family: "Playfair Display", serif;
   color: #87807c;
