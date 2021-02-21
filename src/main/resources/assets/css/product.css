@@ -6,13 +6,6 @@
 .navigation-container ul li a {
   color: var(--nav-text-color);
 }
-.navigation-container {
-  position: relative;
-}
-#logo {
-  background-color: white;
-  border-radius: 50%;
-}
 .img-logo {
   background: white;
 }
@@ -43,15 +36,12 @@
   margin: auto;
   width: 30px;
 }
-
 .shop-naslov:before {
   margin-right: 10px;
 }
-
 .shop-naslov:after {
   margin-left: 10px;
 }
-
 .naslov-proizvoda {
   width: 100%;
   display: flex;
@@ -68,7 +58,6 @@
   display: flex;
   margin-top: 50px;
 }
-
 .left {
   flex-basis: 50%;
 }
@@ -83,7 +72,6 @@
 .right {
   flex-basis: 50%;
 }
-
 .opis {
   font-family: "Playfair Display", serif;
   color: #675c53;
@@ -91,26 +79,21 @@
   font-size: 16px;
   text-align: justify;
 }
-
 .opis p {
   padding: 0 20px 20px 0;
 }
-
 .opis-i-cena {
   padding: 20px 0 0 45px;
 }
-
 .cena {
   width: 100%;
   margin: 15px 0 4px 0;
 }
-
 .cena-naslov {
   font-family: "Raleway", sans-serif;
   color: #a8a19b;
   font-size: 20px;
 }
-
 .cena-broj {
   font-family: "Playfair Display", serif;
   color: #87807c;
@@ -119,24 +102,20 @@
   position: relative;
   bottom: 10px;
 }
-
 .cena-broj span {
   font-size: 33px;
 }
-
 .kolicina-i-dugme {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 20px 0 20px 0;
 }
-
 .kolicina {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .kolicina input {
   width: 40px;
   height: 40px;
@@ -147,22 +126,18 @@
   font-size: 30px;
   text-align: center;
 }
-
 .kolicina input:focus {
   outline: none;
 }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
   margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
-
 .dugme button {
   height: 40px;
   width: 130px;
@@ -172,7 +147,6 @@ input[type="number"] {
   border: none;
   font-size: 17px;
 }
-
 .dugme button:hover {
   background-color: #87807c;
   transition: 0.4s;
