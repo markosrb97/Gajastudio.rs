@@ -1,85 +1,161 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-	<meta charset="utf-8" />
+    <title>Gaia Studio | Order Details</title>
 
-	<title>Gaia Studio | Order Details </title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta
+      name="author"
+      content="Marko Radosavljević, Janko Obradović, Filip Andrić"
+    />
+    <!-- Update za mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--------------------->
+    <meta name="robots" content="NO INDEX, NO FOLLOW" />
 
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="Marko Radosavljević, Janko Obradović, Filip Andrić" />
-	<meta name="robots" content="NO INDEX, NO FOLLOW" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/orderForm.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../assets/css/orderForm.css"/>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="logo-header">
-			<img src="../assets/images/moj logo.png" alt="logo">
-		</div>
+      <div class="logo-header">
+        <a href="#"><img src="../assets/images/moj logo.png" alt="logo" /></a>
+      </div>
     </header>
 
-	
-	<main class="body-style">
-        <div class="container">
-			<div class="left">
-				<div class="forma">
-					<form>
-						<h2 class="porudzbina-title">Detalji za porudžbinu</h2>
-						<div class="razmak">
-							<input class="ime" type="text" placeholder="Ime"> <input class="prezime" type="text" placeholder="Prezime">
-						</div>
-						<input class="ulica" type="text" placeholder="Naziv i broj ulice">
-						<div class="razmak">
-							<input class="grad" type="text" placeholder="Grad"> <input class="zip-broj" type="text" placeholder="Poštanski broj">
-						</div>
-						<input class="broj-tel" type="text" placeholder="Broj telefona">
-						<textarea class="napomena" maxlength="500" placeholder="Napomena (nije obavezno)" oninput="maxWords()"></textarea>
-						<p class="poruka">Preostalo vam je još <span class="duzina-poruke">500</span> karaktera.</p>
-						<div class="naruci">
-							<a href="#">&lt; Nazad u korpu</a> <input type="submit" value="Naruči">
-						</div>
-						
-					</form>
-				</div>
-			</div> 
-			<div class="right">
-				<div class="prikaz-proizvoda">
-					<div class="slika-proizvoda">
-						<img class="thumbnail-proizvod" src="../assets/images/Sveca preview 2 small/Ljubav_i_strast.jpg">
-						<div class="badge">
-							<p>2</p>
-						</div>
-					</div>
-					<div class="ime-i-cena">
-						<p class="ime-proizvoda">Ljubav i strast</p> <p class="cena-proizvoda">1000 RSD</p>
-					</div>
-				</div>
-				<div class="racun">
-					<p class="ukupno">Ukupno</p> <p class="ukupna-cena">1000 RSD</p>
-				</div>
-				<div class="dostava-napomena">
-					<p><sup>*</sup>U cenu nije uključena poštarina jer cena varira u zavisnosti od kurirske službe.</p>
-				</div>
-			</div>
-		
-    	</div>
-	</main>
+    <main class="body-style">
+      <!-- Update za mobile -->
+      <div class="pregled-porudzbine">
+        <div class="pregled-porudzbine-meni" onclick="showHideMenu()">
+          <div class="left-side">
+            <img class="korpa" src="../assets/images/iconmonstr-shopping-cart-3-240.png"/>
+            <p>Pregled porudzbine</p>
+            <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg" class="dropdown" fill="#000"> <path d="M.504 1.813l4.358 3.845.496.438.496-.438 4.642-4.096L9.504.438 4.862 4.534h.992L1.496.69.504 1.812z"></path></svg>
+          </div>
+          <p class="cena">1000 RSD</p>
+        </div>
+      </div>
+      <div class="meni-spusten">
+        <div class="meni-spusten-slika-i-cena">
+          <div class="meni-spusten-slika">
+            <img src="../assets/images/Sveca preview 2 small/Ljubav_i_strast.jpg">
+            <div class="badge-kolicina">5</div>
+          </div>
+          <div class="meni-spusten-ime-i-cena">
+            <p class="ime-svece">Ljubav i strast</p>
+            <p class="cena-svece">1000 RSD</p>
+          </div>
+        </div>
+        <hr/>
+        <div class="meni-spusten-ukupno">
+            <p>Ukupno</p> <p>1000 RSD</p>
+          </div>
+        <hr/>
+        <div class="meni-spusten-napomena">
+          <p>
+            <sup>*</sup>U cenu nije uključena poštarina jer cena varira u
+            zavisnosti od kurirske službe.
+          </p>
+          </div>
+      </div>
+      <!--------------------->
+      <div class="container">
+        <!--ovo je nov div-->
+        <div class="podaci-i-cena">
+          <!--------------------->
+          <div class="left">
+            <div class="forma">
+              <form>
+                <h2 class="porudzbina-title">Detalji za porudžbinu</h2>
+                <div class="razmak">
+                  <input class="ime" type="text" placeholder="Ime" />
+                  <input class="prezime" type="text" placeholder="Prezime" />
+                </div>
+                <input
+                  class="ulica"
+                  type="text"
+                  placeholder="Naziv i broj ulice"
+                />
+                <div class="razmak">
+                  <input class="grad" type="text" placeholder="Grad" />
+                  <input
+                    class="zip-broj"
+                    type="text"
+                    placeholder="Poštanski broj"
+                  />
+                </div>
+                <input
+                  class="broj-tel"
+                  type="text"
+                  placeholder="Broj telefona"
+                />
+                <textarea
+                  class="napomena"
+                  maxlength="500"
+                  placeholder="Napomena (nije obavezno)"
+                  oninput="maxWords()"
+                ></textarea>
+                <p class="poruka"> Preostalo vam je još <span class="duzina-poruke">500</span> karaktera.
+                </p>
+                <div class="naruci">
+                  <input type="submit" value="Naruči" />
+                  <a href="#">&lt; Nazad u korpu</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="right">
+            <div class="prikaz-proizvoda">
+              <div class="slika-proizvoda">
+                <img class="thumbnail-proizvod" src="../assets/images/Sveca preview 2 small/Ljubav_i_strast.jpg"/>
+                <div class="badge">
+                  <p>2</p>
+                </div>
+              </div>
+              <div class="ime-i-cena">
+                <p class="ime-proizvoda">Ljubav i strast</p>
+                <p class="cena-proizvoda">1000 RSD</p>
+              </div>
+            </div>
+            <div class="racun">
+              <p class="ukupno">Ukupno</p>
+              <p class="ukupna-cena">1000 RSD</p>
+            </div>
+            <div class="dostava-napomena">
+              <p>
+                <sup>*</sup>U cenu nije uključena poštarina jer cena varira u
+                zavisnosti od kurirske službe.
+              </p>
+            </div>
+          </div>
+          <!--ovde se zatvara nov div-->
+        </div>
+        <!--------------------------->
+      </div>
+    </main>
 
-	
-	
-
-	<script src="../assets/js/jquery-3.5.1.min.js"></script>
-	<script src="../assets/js/orderForm.js"></script>
-	
-</body>
-
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/orderForm.js"></script>
+  </body>
 </html>
