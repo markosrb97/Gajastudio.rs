@@ -235,6 +235,20 @@ input[type="number"] {
     width: 100%;
   }
 
+  .cena {
+    margin: 0 0 13px 0;
+  }
+
+  .cena-naslov {
+    display: inline;
+  }
+
+  .cena-broj {
+    position: unset;
+    display: inline;
+    margin-left: 5px;
+  }
+
 
 }
 
@@ -251,4 +265,19 @@ input[type="number"] {
   .opis {
     text-align: left;
   }
+
+  .cena {
+    margin: 0 0 13px 0;
+  }
+
+  .cena-naslov {
+    display: inline;
+  }
+
+  .cena-broj {
+    position: unset;
+    display: inline;
+    margin-left: 5px;
+  }
+
 }
