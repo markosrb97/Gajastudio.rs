@@ -27,15 +27,15 @@
   border-color: var(--nav-text-color);
 }
 
+/************/
+.navigation-container {
+  position: relative;
+}
+
 /* izmenjeno */
 .body-style {
   background-color: #f1eee7;
   justify-content: center;
-}
-
-/************/
-.navigation-container {
-  position: relative;
 }
 
 .container {
