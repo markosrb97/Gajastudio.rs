@@ -6,6 +6,9 @@
 .navigation-container ul li a {
   color: var(--nav-text-color);
 }
+.cart {
+  color: var(--nav-text-color);
+}
 .navigation-container {
   position: relative;
 }
@@ -16,7 +19,7 @@
 }
 .container {
   width: 1000px;
-  height: auto;
+  height: 100%;
 }
 .shop-naslov {
   display: flex;
@@ -42,12 +45,8 @@
   margin-left: 10px;
 }
 .basket-container {
-  width: 100%;
-  height: 600px;
+  height: 100%;
   background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 25px;
 }
 .basket {
@@ -71,7 +70,6 @@ table {
   margin-top: 50px;
   font-family: "Playfair Display", serif;
   color: #87807c;
-  display: table;
 }
 thead {
   border-bottom: 1px solid #e2ddd8;
@@ -118,7 +116,6 @@ td {
   width: 13px;
 }
 .check-out {
-  display: block;
   text-align: right;
   margin-top: 20px;
 }
@@ -144,12 +141,6 @@ td {
 .ukupno {
   margin-bottom: 20px;
 }
-.ukupno span,
-p {
-  display: inline;
-  font-family: "Playfair Display", serif;
-  color: #87807c;
-}
 .ukupno span {
   font-weight: 600;
   text-transform: uppercase;
@@ -157,36 +148,57 @@ p {
   font-size: 13px;
   line-height: 36px;
   letter-spacing: 1px;
+  display: inline;
+  color: #87807c;
 }
 .ukupno p {
   margin-left: 50px;
   font-size: 25px;
+  display: inline;
+  color: #87807c;
 }
 @media only screen and (max-width: 770px) {
   .container {
     width: 100%;
   }
+  .basket {
+    border: none;
+  }
+  form {
+    padding: 10px;
+  }
+  tr th {
+    font-size: 10px;
+  }
   .basket-container {
     padding: 0;
   }
   .slika-proizvoda {
-    width: 100px;
+    width: 50px;
   }
   .slika-proizvoda img {
-    width: 100px;
-  }
-  .check-out {
-    text-align: center;
+    width: 50px;
   }
   .cena-prozivoda,
   .ukupna-cena {
-    font-size: 15px;
+    font-size: 10px;
   }
   .opis-proizvoda {
+    font-size: 10px;
     padding-left: 5px;
-    font-size: 15px;
   }
-  .ukupno-h {
-    text-align: right;
+  .kolicina-proizvoda {
+    text-align: center;
+  }
+  .kolicina-proizvoda input {
+    height: 30px;
+    width: 30px;
+  }
+  .ukupno span {
+    font-size: 12px;
+  }
+  .ukupno p {
+    font-size: 20px;
+    margin-left: 20px;
   }
 }
