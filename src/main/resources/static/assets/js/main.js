@@ -26,9 +26,11 @@ function menuShowHide() {
   
   if (menuSwitch == 0) {
     $("#menu-list").slideDown();
+    $(".shop-naslov").animate({'margin-top': '+300px', opacity: 1}, 500);
     menuSwitch = 1;
   } else {
     $("#menu-list").slideUp();
+    $(".shop-naslov").animate({'margin-top': '100px', opacity: 1}, 500);
     menuSwitch = 0;
   }
   

@@ -1,39 +1,57 @@
-@import url('colors.css');
+@import url("colors.css");
+
 * {
   margin: 0px;
   padding: 0px;
 }
+
 .navigation-container ul li a {
   color: var(--nav-text-color);
 }
-.cart{
+
+.img-log {
+  background-color: white;
+}
+
+.cart a {
   color: var(--nav-text-color);
 }
-.broj-proizovda{
+
+.broj-proizovda {
   border-color: var(--nav-text-color);
+  color: var(--nav-text-color);
 }
+
+.navigation-container {
+  position: relative;
+}
+
 .body-style {
   background-color: #f1eee7;
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
+
 .container {
   width: 1000px;
-  height: auto;
+  height: 100%;
 }
+
 .shop-naslov {
   display: flex;
   flex-direction: row;
   margin-bottom: 80px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: #a8a19b;
   letter-spacing: 4px;
   margin-top: 100px;
 }
+
 .shop-naslov:before,
 .shop-naslov:after {
-  content: '';
+  content: "";
   border-bottom: 1px solid #a8a19b;
   margin: auto;
   width: 30px;
@@ -48,10 +66,8 @@
 }
 
 .basket-container {
+  height: 100%;
   background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 25px;
 }
 
@@ -61,15 +77,14 @@
   border: 1px solid #a8a19b;
   display: flex;
   justify-content: center;
-  padding: 60px;
 }
 
 form {
+  padding: 30px;
   width: 100%;
 }
 
 .slika-proizvoda img {
-  height: 150px;
   width: 150px;
   border-radius: 10%;
 }
@@ -78,9 +93,8 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 50px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #87807c;
-  display: table;
 }
 
 thead {
@@ -99,7 +113,7 @@ table thead tr {
   font-size: 12px;
   line-height: 36px;
   letter-spacing: 1px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 td {
@@ -109,6 +123,7 @@ td {
 .slika-proizvoda {
   width: 190px;
 }
+
 .kolicina-proizvoda input {
   height: 40px;
   width: 40px;
@@ -120,6 +135,7 @@ td {
 .kolicina-proizvoda input:focus {
   outline: none;
 }
+
 .opis-proizvoda a {
   text-decoration: none;
   color: #87807c;
@@ -136,30 +152,28 @@ td {
 }
 
 .check-out {
-  display: block;
   text-align: right;
   margin-top: 20px;
 }
 
-.check-out a {
-  text-align: center;
-  text-decoration: none;
+.check-out input {
   display: block;
   float: right;
   height: 45px;
   width: 100px;
-  font-size: 24px;
+  font-size: large;
   color: #f1eee7;
   background-color: #a8a19b;
   cursor: pointer;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   border: none;
 }
-.check-out a:focus {
+
+.check-out input:focus {
   outline: none;
 }
 
-.check-out a:hover {
+.check-out input:hover {
   background-color: #87807c;
   transition: 0.4s;
 }
@@ -167,12 +181,7 @@ td {
 .ukupno {
   margin-bottom: 20px;
 }
-.ukupno span,
-p {
-  display: inline;
-  font-family: 'Playfair Display', serif;
-  color: #87807c;
-}
+
 .ukupno span {
   font-weight: 600;
   text-transform: uppercase;
@@ -180,9 +189,71 @@ p {
   font-size: 13px;
   line-height: 36px;
   letter-spacing: 1px;
+  display: inline;
+  color: #87807c;
 }
 
 .ukupno p {
   margin-left: 50px;
   font-size: 25px;
+  display: inline;
+  color: #87807c;
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    width: 100%;
+  }
+
+  .basket {
+    border: none;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  tr th {
+    font-size: 10px;
+  }
+
+  .basket-container {
+    padding: 0;
+  }
+
+  .slika-proizvoda {
+    width: 50px;
+  }
+
+  .slika-proizvoda img {
+    width: 50px;
+  }
+
+  .cena-prozivoda,
+  .ukupna-cena {
+    font-size: 10px;
+  }
+
+  .opis-proizvoda {
+    font-size: 10px;
+    padding-left: 5px;
+  }
+
+  .kolicina-proizvoda {
+    text-align: center;
+  }
+
+  .kolicina-proizvoda input {
+    height: 30px;
+    width: 30px;
+  }
+
+  .ukupno span {
+    font-size: 12px;
+  }
+
+  .ukupno p {
+    font-size: 20px;
+    margin-left: 20px;
+  }
 }
