@@ -10,6 +10,8 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="Marko Radosavljević, Janko Obradović, Filip Andrić" />
 	<meta name="robots" content="NO INDEX, NO FOLLOW" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" th:href="@{/assets/css/main.css}"/>
@@ -22,19 +24,38 @@
 </head>
 
 <body>
-<header>
-	<nav>
-		<div class="navigation-container">
-			<ul class="d-flex">
-				<li><a th:href="@{/}">Home</a></li>
-				<li><a th:href="@{/shop}">Shop</a></li>
-				<li><img th:src="@{/assets/images/moj logo.png}" class="img-logo"/></li>
-				<li><a th:href="@{/contact}">Contact</a></li>
-				<li><a th:href="@{/about}">About</a></li>
-			</ul>
-		</div>
-	</nav>
-</header>
+    <header>
+        <nav>
+            <div class="navigation-container">
+              <div class="logo-mob">
+                <img th:src="@{/assets/images/moj logo.png}" class="img-logo-mob" />
+              </div>
+              
+              <ul class="d-flex" id="menu-list">
+                <li><a th:href="@{/}">Početna</a></li>
+                <li><a th:href="@{/shop}">Shop</a></li>
+                <li id="logo">
+                  <img th:src="@{/assets/images/moj logo.png}" class="img-logo" />
+                </li>
+                <li><a th:href="@{/contact}">Kontakt</a></li>
+                <li><a th:href="@{/about}">O nama</a></li>
+                <div class="cart d-flex">
+                  <p>Korpa</p>
+                  <div class="broj-proizovda" th:text="${cart.numberOfItems}"> </div>
+                </div>
+              </ul>
+              
+              <div class="menu-button" id="menu-button" onclick="menuShowHide()">
+                <img th:src="@{/assets/images/iconmonstr-menu-1-240.png}" />
+                <p>MENU</p>
+              </div>
+    
+              <div class="cart-mobile">
+                <p>Korpa</p>
+                <div class="broj-proizovda" th:text="${cart.numberOfItems}"> </div>
+              </div>
+          </nav>
+    </header>
 	<main class="body-style">
 		<div class="container">
         <p class="shop-naslov">KORPA</p>
@@ -88,20 +109,33 @@
         
     </main>
 
-    <footer class="d-flex">
-        <div class="footer-box r-border">
-        <p class="footer-text-first">Imate pitanja ?</p>
-        <br>
-        <p class="footer-text-mid">Ukoliko zelite nesto da nas pitate <br> to mozete odraditi putem nasem mail adrese</p>
-        <br>
-        <p>mail@domen.rs</p>
+    <footer>
+        <div class="container-footer d-flex">
+          <div class="footer-box">
+            <div class="f-right w-350">
+              <p class="footer-text-first">Imate pitanja ?</p>
+              <br />
+              <p class="footer-text-mid">
+                Ukoliko zelite nesto da nas pitate <br />
+                to mozete odraditi putem nasem mail adrese
+              </p>
+              <br />
+              <p>mail@domen.rs</p>
+            </div>
+          </div>
+          <div class="footer-box">
+            <div class="f-left w-350">
+              <p>Zapratite nas</p>
+              <img th:src="@{/assets/images/facebook-square-brands.png}" alt="" />
+              <img th:src="@{/assets/images/instagram-brands.png}" alt="" />
+            </div>
+          </div>
         </div>
-        <div class="footer-box l-border">
-        <p>Zapratite nas</p>
-        <img th:src="@{/assets/images/facebook-square-brands.png}" alt="">
-        <img th:src="@{/assets/images/instagram-brands.png}" alt="">
-        </div>
-    </footer>
+      </footer>
+
+	  <script th:src="@{/assets/js/jquery-3.5.1.min.js}"></script>
+	  <script th:src="@{/assets/js/main.js}"></script>
+	  <script th:src="@{/assets/js/basket.js}"></script>
 
 </body>
 </html>

@@ -91,14 +91,32 @@ public class AdminController {
 	@PostMapping("/admin/edit/{id}")
 	public String editItem(Model model, @PathVariable int id, @ModelAttribute Candle candle) {
 		
-		//TODO
+		Optional<Candle> t = products.findById(candle.getId());
+		Candle tmp = t.get();
+		products.deleteById(candle.getId());
+		products.save(tmp);
 		
-		return "adminEdit";
+		return "redirect:/admin";
 	}
 	
-	/*	TODO:
-	 *  /admin/remove
-	 *  /admin/edit
-	 */
+	@PostMapping("/admin/remove/{id}")
+	public String removeItem(@PathVariable int id) {
+		
+		Optional<Candle> t = products.findById((long) id);
+		Candle candle = t.get();
+		Path path1 = Paths.get(UPLOAD_FOLDER1 + candle.getType() + ".jpg");
+		Path path2 = Paths.get(UPLOAD_FOLDER2 + candle.getType() + ".jpg");
+		try {
+			Files.deleteIfExists(path1);
+			Files.deleteIfExists(path2);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+		products.deleteById((long) id);
+		
+		return "redirect:/admin";
+	}
 	
 }

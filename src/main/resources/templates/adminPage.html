@@ -17,10 +17,10 @@
             <div class="opis">
                     <p th:text="${candle.description}"> </p>
                     
-                    <div class="linkovi">
-                        <a href="#" class="izmeni">Izmeni</a>
-                        <a href="#" class="obrisi">Obriši</a>
-                    </div>
+                    <form class="linkovi" method="POST" th:action="@{${'admin/remove/'+candle.id}}">
+                        <a th:href="@{${'/admin/edit/'+candle.id}}" ><button class="izmeni"> Izmeni </button></a>
+                        <button class="obrisi" type="submit">Obriši</button>
+                    </form>
             </div>
             
         </div>

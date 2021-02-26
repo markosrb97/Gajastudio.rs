@@ -20,18 +20,18 @@
 	<nav>
         <div class="navigation-container">
 			<div class="logo-mob">
-			  <img th:src="@{/assets/images/moj logo.png}" class="img-logo-mob" />
+				<a th:href="@{/}"><img th:src="@{assets/images/moj logo.png}" class="img-logo" /></a>
 			</div>
 			<ul class="d-flex" id="menu-list">
 			  <li><a th:href="@{/}">Home</a></li>
 			  <li><a th:href="@{/shop}">Shop</a></li>
 			  <li id="logo">
-				<img th:src="@{assets/images/moj logo.png}" class="img-logo" />
+				<a th:href="@{/}"><img th:src="@{assets/images/moj logo.png}" class="img-logo" /></a>
 			  </li>
 			  <li><a th:href="@{/contact}">Contact</a></li>
-			  <li><a href="#">About</a></li>
+			  <li><a th:href="@{/about}">About</a></li>
 			  <div class="cart d-flex">
-				<p>Korpa</p> 
+				<a th:href="@{/cart}"><p>Korpa</p> </a>
 				<div class="broj-proizovda" th:text="${cart.numberOfItems}">  </div>
 			  </div>
 			</ul>
@@ -42,7 +42,7 @@
 			</div>
   
 			<div class="cart-mobile">
-			  <p>Korpa</p>
+				<a th:href="@{/cart}"><p>Korpa</p> </a>
 			  <div class="broj-proizovda" th:text="${cart.numberOfItems}"> </div>
 			</div>
   

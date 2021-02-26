@@ -187,6 +187,17 @@ public class WebController {
 		return "contactForm";
 	}
 	
-	
+	@GetMapping("/about")
+        public String about(Model model, HttpSession session){
+            if(session.getAttribute("cart") != null){
+                cart = (Cart) session.getAttribute("cart");
+                model.addAttribute("cart", cart);
+            }else{
+                Cart temp = new Cart();
+                model.addAttribute("cart", temp);
+            }
+            
+            return "about";
+        }
 	
 }
