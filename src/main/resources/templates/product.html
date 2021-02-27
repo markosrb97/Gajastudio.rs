@@ -26,34 +26,35 @@
 <body>
     <header>
         <nav>
-            <div class="navigation-container">
+          <div class="navigation-container">
               <div class="logo-mob">
-                <a th:href="@{/}"><img th:src="@{assets/images/moj logo.png}" class="img-logo-mob" /></a>
+                <a th:href="@{/}"><img th:src="@{/assets/images/moj logo.png}" class="img-logo-mob" /></a>
               </div>
-              
               <ul class="d-flex" id="menu-list">
-                <li><a th:href="@{/}">Početna</a></li>
+                <li><a th:href="@{/}">Pоčetna</a></li>
                 <li><a th:href="@{/shop}">Shop</a></li>
                 <li id="logo">
-                  <a th:href="@{/}"><img th:src="@{assets/images/moj logo.png}" class="img-logo" /></a>
+                <a th:href="@{/}"><img th:src="@{/assets/images/moj logo.png}" class="img-logo" /></a>
                 </li>
                 <li><a th:href="@{/contact}">Kontakt</a></li>
                 <li><a th:href="@{/about}">O nama</a></li>
                 <div class="cart d-flex">
-                  <a th:href="@{/cart}"><p>Korpa</p> </a>
-                  <div class="broj-proizovda" th:text="${cart.numberOfItems}"> </div>
+                <a th:href="@{/cart}"><p>Korpa</p> </a>
+                <div class="broj-proizovda" th:text="${cart.numberOfItems}">  </div>
                 </div>
               </ul>
-              
+          
               <div class="menu-button" id="menu-button" onclick="menuShowHide()">
                 <img th:src="@{/assets/images/iconmonstr-menu-1-240.png}" />
                 <p>MENU</p>
               </div>
-    
+          
               <div class="cart-mobile">
                 <a th:href="@{/cart}"><p>Korpa</p> </a>
                 <div class="broj-proizovda" th:text="${cart.numberOfItems}"> </div>
               </div>
+        
+            </div>
           </nav>
     </header>
 	<main class="body-style">

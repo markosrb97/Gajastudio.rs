@@ -66,7 +66,7 @@
 }
 
 .basket-container {
-  height: 100%;
+  /* height: 100%; */
   background: white;
   padding: 25px;
 }
@@ -167,6 +167,7 @@ td {
   cursor: pointer;
   font-family: "Playfair Display", serif;
   border: none;
+  text-align: center;
 }
 
 .check-out input:focus {

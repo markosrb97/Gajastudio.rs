@@ -103,6 +103,6 @@ public class Candle {
 	
 	@Override
 	public String toString() {
-		return type + "\n" + price + "\n" + this.description + "\n";
+		return "TIP SVECE:" + type + "\n";
 	}
 }
