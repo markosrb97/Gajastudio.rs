@@ -30,6 +30,7 @@ header {
 .body-style {
   padding-top: 100px;
   background-color: #f1eee7;
+  height: 100vh;
 }
 
 .container {
@@ -412,6 +413,7 @@ hr {
 
   .body-style {
     padding-top: 0;
+    height: unset;
   }
 
   .container {

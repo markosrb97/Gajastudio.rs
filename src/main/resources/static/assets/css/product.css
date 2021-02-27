@@ -17,12 +17,13 @@
   background: white;
 }
 
-.cart {
+.cart a {
   color: var(--nav-text-color);
 }
 
 .broj-proizovda {
   border-color: var(--nav-text-color);
+  color: var(--nav-text-color);
 }
 
 .body-style {
@@ -30,6 +31,7 @@
   display: flex;
   align-content: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .container {
@@ -206,6 +208,10 @@ input[type="number"] {
 }
 
 @media only screen and (max-width: 770px) {
+
+  .body-style {
+    height: unset;
+  }
 
   .container {
     width: auto;

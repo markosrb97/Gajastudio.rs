@@ -9,7 +9,7 @@
   color: var(--nav-text-color);
 }
 
-.cart {
+.cart a {
   color: var(--nav-text-color);
 }
 
@@ -19,13 +19,14 @@
 
 .broj-proizovda {
   border-color: var(--nav-text-color);
-  ;
+  color: var(--nav-text-color);
 }
 
 .body-style {
   background-color: #f1eee7;
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 
 .navigation-container {
@@ -212,6 +213,11 @@ form textarea {
 }
 
 @media only screen and (max-width: 1000px) {
+
+  .body-style {
+    height: unset;
+  }
+
   .container {
     width: auto;
   }
@@ -245,6 +251,7 @@ form textarea {
   .ime,
   .email {
     display: block;
+    width: 100%;
   }
 
   .email {
