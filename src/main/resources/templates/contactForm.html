@@ -75,24 +75,24 @@
                             </div>
                         </div>
                         <div class="right">
-                            <form>
+                            <form th:action="@{/contact}" method="POST" th:object="${contact}">
                                 <div class="ime-i-email">
                                     <div class="ime">
                                         <label>VAŠE IME<sup>*</sup></label>
-                                        <input type="text">
+                                        <input type="text" th:field="*{name}">
                                     </div> 
                                     <div class="email"> 
                                         <label>EMAIL<sup>*</sup></label>
-                                        <input type="text">
+                                        <input type="text" th:field="*{email}">
                                     </div>
                                 </div>
                                 <div class="tema">
                                     <label>TEMA</label>
-                                    <input type="text">
+                                    <input type="text" th:field="*{subject}">
                                 </div>
                                 <div class="poruka">
                                     <label>PORUKA<sup>*</sup></label>
-                                    <textarea class="polje" maxlength="1000" oninput="maxWords()"></textarea>
+                                    <textarea class="polje" maxlength="1000" oninput="maxWords()" th:field="*{message}"></textarea>
                                     <p>Preostalo vam je još <span class="broj-reci">1000</span> karaktera.</p>
                                     <input class="posalji" type="submit" value="POŠALJI">
                                 </div>

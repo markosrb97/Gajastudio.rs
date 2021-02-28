@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import rs.gaiastudio.model.Candle;
 import rs.gaiastudio.model.Cart;
 import rs.gaiastudio.model.CartItem;
+import rs.gaiastudio.model.Contact;
 import rs.gaiastudio.model.Customer;
 import rs.gaiastudio.model.Order;
 import rs.gaiastudio.repo.CandleRepository;
@@ -191,9 +192,33 @@ public class WebController {
 			Cart temp = new Cart();
 			model.addAttribute("cart", temp);
 		}
-		
+		model.addAttribute("contact", new Contact());
 		return "contactForm";
 	}
+        
+        @PostMapping("/contact")
+        public String contactPost(@ModelAttribute Contact contact, Model model, HttpSession session){
+            
+            if(session.getAttribute("cart") != null){
+                cart = (Cart) session.getAttribute("cart");
+                model.addAttribute("cart", cart);
+            }else{
+                Cart temp = new Cart();
+                model.addAttribute("cart", temp);
+            }
+            
+            /*
+            SimpleMailMessage msg = new SimpleMailMessage();
+            //adresa na koju ce da se salje mejl za svaki order
+            msg.setTo("janiobrad@gmail.com");
+            msg.setSubject("contact");  
+            msg.setText(contact.toString());
+            mailSender.send(msg);
+            */
+            //System.out.println(contact.toString());
+            return "tyPageContact";
+            
+        }
 	
 	@GetMapping("/about")
         public String about(Model model, HttpSession session){
