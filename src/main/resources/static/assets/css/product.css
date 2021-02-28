@@ -27,6 +27,7 @@
 }
 
 .body-style {
+  height: 100vh;
   background-color: #f1eee7;
   display: flex;
   align-content: center;
@@ -210,7 +211,11 @@ input[type="number"] {
   transition: 0.4s;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 900px) {
+
+  .body-style {
+    height: unset;
+  }
 
   .container {
     width: auto;

@@ -31,6 +31,7 @@ header {
   padding-top: 100px;
   background-color: #f1eee7;
   height: 100vh;
+  overflow: auto;
 }
 
 .container {
@@ -420,6 +421,7 @@ hr {
   .container {
     max-width: 500px;
     width: auto;
+    margin-bottom: 50px;
   }
 
   .podaci-i-cena {

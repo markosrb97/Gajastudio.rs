@@ -201,7 +201,11 @@ td {
   color: #87807c;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 900px) {
+  .body-style {
+    height: unset;
+  }
+
   .container {
     width: 100%;
   }
@@ -220,6 +224,7 @@ td {
 
   .basket-container {
     padding: 0;
+    margin-bottom: 100px;
   }
 
   .slika-proizvoda {
