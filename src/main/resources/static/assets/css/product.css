@@ -17,7 +17,7 @@
   background: white;
 }
 
-.cart a{
+.cart a {
   color: var(--nav-text-color);
 }
 
@@ -157,6 +157,10 @@ hr {
   border: none;
 }
 
+.hr-mobile {
+  display: none;
+}
+
 .kolicina {
   display: flex;
   justify-content: space-between;
@@ -227,6 +231,10 @@ input[type="number"] {
     flex-basis: 100%;
   }
 
+  .hr-mobile {
+    display: block;
+  }
+
   .opis-i-cena {
     margin-top: 50px;
     padding: 0;
@@ -248,6 +256,24 @@ input[type="number"] {
     position: unset;
     display: inline;
     margin-left: 5px;
+  }
+
+  .kolicina-i-dugme {
+    display: block;
+  }
+
+  .kolicina {
+    justify-content: unset;
+    margin-bottom: 20px;
+  }
+
+  .dugme {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .dugme button {
+    width: 200px;
   }
 
 
