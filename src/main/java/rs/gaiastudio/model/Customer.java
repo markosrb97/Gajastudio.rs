@@ -8,15 +8,6 @@ public class Customer {
 	private String address;
 	private String city;
 	private String zipCode;
-        private String note;
-        
-        public String getNote(){
-            return note;
-        }
-        
-        public void setNote(String note){
-            this.note = note;
-        }
 	
 	public Customer() {};
 	

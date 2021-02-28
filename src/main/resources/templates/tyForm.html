@@ -26,10 +26,10 @@
 	<nav>
 		<div class="navigation-container">
 			<ul class="d-flex">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Shop</a></li>
+				<li><a th:href="@{/}">Home</a></li>
+				<li><a th:href="@{/shop}">Shop</a></li>
 				<li><img th:src="@{/assets/images/moj logo.png}" class="img-logo"/></li>
-				<li><a href="#">Contact</a></li>
+				<li><a th:href="@{/contact}">Contact</a></li>
 				<li><a href="#">About</a></li>
 			</ul>
 		</div>
@@ -37,10 +37,10 @@
 </header>
 	<main class="body-style">
 		<div class="container">
-        <p class="shop-naslov">KORPA</p>
+
         <div class="basket-container">
             <div class="basket">
-                <p>Korpa je prazna.</p>
+                <p>Vasa porudzbina je primljena.</p>
             </div>
         </div>
         </div>

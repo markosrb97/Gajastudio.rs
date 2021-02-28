@@ -70,27 +70,19 @@ public class WebController {
 	}
 	
 	@PostMapping("/order")
-	public String submitOrder(@ModelAttribute Customer customer, Model model, HttpSession session) {
+	public String submitOrder(@ModelAttribute Customer customer, Model model) {
 		Order order = new Order(customer);
-		//model.addAttribute("order", order);
+		model.addAttribute("order", order);
 		
 		SimpleMailMessage msg = new SimpleMailMessage();
 		//adresa na koju ce da se salje mejl za svaki order
-		msg.setTo("janiobrad@gmail.com");
+		msg.setTo("email-address");
 		msg.setSubject("order");
-                cart = (Cart) session.getAttribute("cart");
-                order.setCandles(cart);
-                String result = "";
 		msg.setText(order.toString());
 		
 		mailSender.send(msg);
-                
-                
-                Cart temp = new Cart();
-		model.addAttribute("cart", temp);
-                
 		
-		return "tyPage";
+		return "tyForm";
 	}
 	
 	@GetMapping("/shop")
