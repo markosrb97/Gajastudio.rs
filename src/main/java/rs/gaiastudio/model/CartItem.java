@@ -25,5 +25,7 @@ public class CartItem {
 	public void setCandle(Candle candle) {
 		this.candle = candle;
 	}
-	
+	public String toString(){
+            return candle.toString() + "\n" + "broj komada: " + quantity + "\n";
+        }
 }

@@ -61,7 +61,7 @@
         <p class="shop-naslov">KORPA</p>
         <div class="basket-container">
             <div class="basket">
-				<form>
+			<form th:action="@{/order}" method="GET">
 				<table>
 					<thead>
 						<tr>
@@ -100,7 +100,7 @@
 					<div class="ukupno">
 						<span>Ukupno:</span> <span th:text="${cart.sumPrice}"> </span> <span> RSD</span>
 					</div>
-					<a th:href="@{/order}">Dalje</a>
+					<input type="submit" value="Dalje" class="check-out">
 				</div>
 			</form>
             </div>
