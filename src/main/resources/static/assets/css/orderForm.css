@@ -58,7 +58,7 @@ header {
 
 .porudzbina-title {
   font-weight: normal;
-  font-family: "Lora", serif;
+  font-family: 'Playfair Display', serif;
   margin-bottom: 40px;
 }
 
@@ -74,7 +74,7 @@ header {
   border: 1px solid #a8a19b;
   border-radius: 5px;
   height: 45px;
-  font-family: "Lora", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 15px;
   box-sizing: border-box;
 }
@@ -120,7 +120,7 @@ header {
 
 .naruci a {
   text-decoration: none;
-  font-family: "Lora", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 15px;
   color: #a8a19b;
 }
@@ -156,7 +156,7 @@ header {
   padding: 8px 8px 0 8px;
   border: 1px solid #a8a19b;
   border-radius: 5px;
-  font-family: "Lora", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 15px;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -202,7 +202,7 @@ header {
 }
 
 .badge p {
-  font-family: "Lora", serif;
+  font-family: 'Playfair Display', serif;
   color: #f1eee7;
 }
 
@@ -221,8 +221,12 @@ header {
 }
 
 .ime-i-cena p {
-  font-family: "Lora", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
+}
+
+.cena-proizvoda span {
+  font-size: 20px;
 }
 
 .racun {
@@ -235,7 +239,7 @@ header {
 }
 
 .racun p {
-  font-family: "Lora", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .ukupna-cena {
@@ -245,11 +249,12 @@ header {
 
 .dostava-napomena {
   padding-top: 20px;
+  text-align: center;
 }
 
 .dostava-napomena p {
-  font-family: "Lora", serif;
-  font-size: 13px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
   padding: 10px 10px 10px 10px;
   background-color: #a8a19b;
   border-radius: 5px;
@@ -262,7 +267,7 @@ header {
 
 .poruka,
 .duzina-poruke {
-  font-family: "Lora", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 15px;
   color: #87807c;
   margin-bottom: 30px;
@@ -281,7 +286,7 @@ header {
   display: flex;
   align-items: center;
   display: none;
-  font-family: "Lora", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .pregled-porudzbine-meni {
@@ -317,7 +322,7 @@ header {
   width: 100%;
   border-bottom: 1px solid #a8a19b;
   display: none;
-  font-family: "Lora", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .meni-spusten-slika-i-cena {
@@ -389,7 +394,7 @@ hr {
 }
 
 .meni-spusten-napomena p {
-  font-family: "Lora", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 13px;
   padding: 10px 10px 10px 10px;
   background-color: #a8a19b;

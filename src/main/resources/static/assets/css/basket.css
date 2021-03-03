@@ -181,24 +181,13 @@ td {
 
 .ukupno {
   margin-bottom: 20px;
-}
-
-.ukupno span {
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 13px;
-  line-height: 36px;
-  letter-spacing: 1px;
-  display: inline;
+  font-family: "Playfair Display", serif;
   color: #87807c;
 }
 
-.ukupno p {
-  margin-left: 50px;
-  font-size: 25px;
-  display: inline;
-  color: #87807c;
+
+.ukupna-cena-dole {
+  font-size: 23px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -255,12 +244,4 @@ td {
     width: 10px;
   }
 
-  .ukupno span {
-    font-size: 12px;
-  }
-
-  .ukupno p {
-    font-size: 20px;
-    margin-left: 20px;
-  }
 }
