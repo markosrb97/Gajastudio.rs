@@ -82,6 +82,9 @@
 .basket p {
   text-align: center;
   padding: 50px;
+  font-size: 25px;
+  color: #87807c;
+  font-family: 'Playfair Display', serif;
 }
 
 
@@ -102,6 +105,7 @@
 
   .basket p {
     padding: 25px;
+
   }
 
   .basket-container {
